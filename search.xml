@@ -306,25 +306,6 @@ ps -ef</code></pre><p><a href="https://www.cnblogs.com/mydriverc/p/8303242.html"
       </tags>
   </entry>
   <entry>
-    <title>linux findSofe</title>
-    <url>/posts/1207104400.html</url>
-    <content><![CDATA[<h1 id="centOS7查找安装文件后的路径"><a href="#centOS7查找安装文件后的路径" class="headerlink" title="centOS7查找安装文件后的路径"></a>centOS7查找安装文件后的路径</h1><pre><code>问题描述：如何查看yum install xx 安装文件后的路径</code></pre><h2 id="以安装svnserve文件为例"><a href="#以安装svnserve文件为例" class="headerlink" title="以安装svnserve文件为例"></a>以安装svnserve文件为例</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yum install subversion</span><br></pre></td></tr></table></figure>
-<h2 id="rpm和管道查找具体安装文件全称"><a href="#rpm和管道查找具体安装文件全称" class="headerlink" title="rpm和管道查找具体安装文件全称"></a>rpm和管道查找具体安装文件全称</h2><ol>
-<li>列出所有安装的  subversion<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rpm -q  |grep subversion    #软件是否安装</span><br><span class="line">rpm -qa |grep subversion    #查找安装文件全称</span><br><span class="line">rpm -ql |grep subversion    #列出软件包安装的文件</span><br><span class="line">rpm -qal|grep subversion    #查找所有相关存储文件，包括路径</span><br></pre></td></tr></table></figure>
-<img data-src="/img/centOS1.png" alt="查找位置"></li>
-<li>使用命令 rpm -q |grep subversion-1.7.14-14.el7.x86_64 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rpm -q |grep subversion-1.7.14-14.el7.x86_64   #根据具体文件全称显示安装后文件所在路径</span><br><span class="line">rpm -qa |grep subversion-1.7.14-14.el7.x86_64   #根据具体文件全称显示安装后文件所在路径</span><br></pre></td></tr></table></figure>
- -q是 query   -a是 all     -l是 list</li>
-</ol>
-]]></content>
-      <categories>
-        <category>服务端</category>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>linux httpd</title>
     <url>/posts/3481719661.html</url>
     <content><![CDATA[<h1 id="apachectl-跟httpd区别"><a href="#apachectl-跟httpd区别" class="headerlink" title="apachectl 跟httpd区别"></a>apachectl 跟httpd区别</h1><blockquote>
@@ -488,15 +469,16 @@ ps -ef</code></pre><p><a href="https://www.cnblogs.com/mydriverc/p/8303242.html"
       </tags>
   </entry>
   <entry>
-    <title>linux 环境变量</title>
-    <url>/posts/183057146.html</url>
-    <content><![CDATA[<h1 id="linux-环境变量配置"><a href="#linux-环境变量配置" class="headerlink" title="linux 环境变量配置"></a>linux 环境变量配置</h1><pre><code>我们来看看执行的顺序：
-    1./etc/profile
-    2./etc/environment
-    3.~/.bash_profile
-    4.~/.bashrc
-    5./etc/bashrc
-source ~/.bashrc #保存设置，立即生效</code></pre>]]></content>
+    <title>linux findSofe</title>
+    <url>/posts/1207104400.html</url>
+    <content><![CDATA[<h1 id="centOS7查找安装文件后的路径"><a href="#centOS7查找安装文件后的路径" class="headerlink" title="centOS7查找安装文件后的路径"></a>centOS7查找安装文件后的路径</h1><pre><code>问题描述：如何查看yum install xx 安装文件后的路径</code></pre><h2 id="以安装svnserve文件为例"><a href="#以安装svnserve文件为例" class="headerlink" title="以安装svnserve文件为例"></a>以安装svnserve文件为例</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yum install subversion</span><br></pre></td></tr></table></figure>
+<h2 id="rpm和管道查找具体安装文件全称"><a href="#rpm和管道查找具体安装文件全称" class="headerlink" title="rpm和管道查找具体安装文件全称"></a>rpm和管道查找具体安装文件全称</h2><ol>
+<li>列出所有安装的  subversion<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rpm -q  |grep subversion    #软件是否安装</span><br><span class="line">rpm -qa |grep subversion    #查找安装文件全称</span><br><span class="line">rpm -ql |grep subversion    #列出软件包安装的文件</span><br><span class="line">rpm -qal|grep subversion    #查找所有相关存储文件，包括路径</span><br></pre></td></tr></table></figure>
+<img data-src="/img/centOS1.png" alt="查找位置"></li>
+<li>使用命令 rpm -q |grep subversion-1.7.14-14.el7.x86_64 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rpm -q |grep subversion-1.7.14-14.el7.x86_64   #根据具体文件全称显示安装后文件所在路径</span><br><span class="line">rpm -qa |grep subversion-1.7.14-14.el7.x86_64   #根据具体文件全称显示安装后文件所在路径</span><br></pre></td></tr></table></figure>
+ -q是 query   -a是 all     -l是 list</li>
+</ol>
+]]></content>
       <categories>
         <category>服务端</category>
         <category>linux</category>
@@ -506,20 +488,15 @@ source ~/.bashrc #保存设置，立即生效</code></pre>]]></content>
       </tags>
   </entry>
   <entry>
-    <title>linux 用户</title>
-    <url>/posts/338578885.html</url>
-    <content><![CDATA[<h1 id="理解-etc-passwd-里面的文件信息"><a href="#理解-etc-passwd-里面的文件信息" class="headerlink" title="理解 /etc/passwd 里面的文件信息"></a>理解 /etc/passwd 里面的文件信息</h1><pre><code>apache:x:48:48:Apache:/usr/share/httpd:/sbin/nologin    #对应的含义
-用户名  : 
-密码，出于安全考虑，均显示x: 
-用户id:UID
-用户组id:GID
-备注:
-用户home目录:
-shell命令所在目录:/sbin/nologin意思是无法登陆系统</code></pre><a id="more"></a>
-<h1 id="一、-查看所有用户"><a href="#一、-查看所有用户" class="headerlink" title="一、 查看所有用户"></a>一、 查看所有用户</h1><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cat &#x2F;etc&#x2F;passwd     #例如下</span><br><span class="line">apache:x:48:48:Apache:&#x2F;usr&#x2F;share&#x2F;httpd:&#x2F;sbin&#x2F;nologin</span><br><span class="line">cat &#x2F;etc&#x2F;group      #例如下</span><br><span class="line">group_name:passwd:GID:user_list</span><br><span class="line">组名：密码：组ID：所有用户</span><br></pre></td></tr></table></figure></code></pre><h1 id="添加删除用户"><a href="#添加删除用户" class="headerlink" title="添加删除用户"></a>添加删除用户</h1><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">adduser snow        #添加用户snow，并且&#x2F;home&#x2F;snow自动生成</span><br><span class="line">userdel -r snow     #删除用户，&#x2F;home&#x2F;snow也会自动删除</span><br><span class="line">passwd snow         #为用户snow添加密码</span><br></pre></td></tr></table></figure></code></pre><h1 id="用户和组常用命令"><a href="#用户和组常用命令" class="headerlink" title="用户和组常用命令"></a>用户和组常用命令</h1><pre><code>groups      #查看当前登录用户的组内成员
-groups test #查看test用户所在的组,以及组内成员
-whoami      #查看当前登录用户名
-cat /etc/passwd|grep snow #查找snow用户</code></pre>]]></content>
+    <title>linux 环境变量</title>
+    <url>/posts/183057146.html</url>
+    <content><![CDATA[<h1 id="linux-环境变量配置"><a href="#linux-环境变量配置" class="headerlink" title="linux 环境变量配置"></a>linux 环境变量配置</h1><pre><code>我们来看看执行的顺序：
+    1./etc/profile
+    2./etc/environment
+    3.~/.bash_profile
+    4.~/.bashrc
+    5./etc/bashrc
+source ~/.bashrc #保存设置，立即生效</code></pre>]]></content>
       <categories>
         <category>服务端</category>
         <category>linux</category>
@@ -553,6 +530,29 @@ systemctl start httpd.service   # centos7版本
 
 rpm包安装后开机自启动的方法</code></pre><h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p><a href="https://www.cnblogs.com/gmlkl/p/9354254.html#_label9" target="_blank" rel="noopener">以上三种安装区别</a><br><a href="https://blog.csdn.net/yu876876/article/details/79739413" target="_blank" rel="noopener">yum安装与rpm安装的区别</a></p>
 ]]></content>
+      <categories>
+        <category>服务端</category>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux 用户</title>
+    <url>/posts/338578885.html</url>
+    <content><![CDATA[<h1 id="理解-etc-passwd-里面的文件信息"><a href="#理解-etc-passwd-里面的文件信息" class="headerlink" title="理解 /etc/passwd 里面的文件信息"></a>理解 /etc/passwd 里面的文件信息</h1><pre><code>apache:x:48:48:Apache:/usr/share/httpd:/sbin/nologin    #对应的含义
+用户名  : 
+密码，出于安全考虑，均显示x: 
+用户id:UID
+用户组id:GID
+备注:
+用户home目录:
+shell命令所在目录:/sbin/nologin意思是无法登陆系统</code></pre><a id="more"></a>
+<h1 id="一、-查看所有用户"><a href="#一、-查看所有用户" class="headerlink" title="一、 查看所有用户"></a>一、 查看所有用户</h1><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cat &#x2F;etc&#x2F;passwd     #例如下</span><br><span class="line">apache:x:48:48:Apache:&#x2F;usr&#x2F;share&#x2F;httpd:&#x2F;sbin&#x2F;nologin</span><br><span class="line">cat &#x2F;etc&#x2F;group      #例如下</span><br><span class="line">group_name:passwd:GID:user_list</span><br><span class="line">组名：密码：组ID：所有用户</span><br></pre></td></tr></table></figure></code></pre><h1 id="添加删除用户"><a href="#添加删除用户" class="headerlink" title="添加删除用户"></a>添加删除用户</h1><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">adduser snow        #添加用户snow，并且&#x2F;home&#x2F;snow自动生成</span><br><span class="line">userdel -r snow     #删除用户，&#x2F;home&#x2F;snow也会自动删除</span><br><span class="line">passwd snow         #为用户snow添加密码</span><br></pre></td></tr></table></figure></code></pre><h1 id="用户和组常用命令"><a href="#用户和组常用命令" class="headerlink" title="用户和组常用命令"></a>用户和组常用命令</h1><pre><code>groups      #查看当前登录用户的组内成员
+groups test #查看test用户所在的组,以及组内成员
+whoami      #查看当前登录用户名
+cat /etc/passwd|grep snow #查找snow用户</code></pre>]]></content>
       <categories>
         <category>服务端</category>
         <category>linux</category>
@@ -720,54 +720,6 @@ WantedBy=multi-user.target</code></pre>]]></content>
       </tags>
   </entry>
   <entry>
-    <title>centOS下基于LAMP环境，使用gitee的webhook完成自动部署</title>
-    <url>/posts/3529366497.html</url>
-    <content><![CDATA[<h2 id="webhook是做什么的？"><a href="#webhook是做什么的？" class="headerlink" title="webhook是做什么的？"></a>webhook是做什么的？</h2><pre><code>当你使用gitee提交项目，利用gitee提供的webhook钩子,触发钩子执行脚本,
-将gitee项目克隆或者更新到自己的线上地址</code></pre><h2 id="centOS下基于LAMP环境，使用gitee的webhook完成自动部署"><a href="#centOS下基于LAMP环境，使用gitee的webhook完成自动部署" class="headerlink" title="centOS下基于LAMP环境，使用gitee的webhook完成自动部署"></a>centOS下基于LAMP环境，使用gitee的webhook完成自动部署</h2><pre><code>必备知识：
-    1. 线上搭建LAMP环境
-    2. git知识
-    3. linux基础
-    4. php基础</code></pre><a id="more"></a>
-<h2 id="大致流程（网上有很多参考-可自行搜索）"><a href="#大致流程（网上有很多参考-可自行搜索）" class="headerlink" title="大致流程（网上有很多参考,可自行搜索）"></a>大致流程（网上有很多参考,可自行搜索）</h2><ol>
-<li>首先在gitee上创建一个项目（可以搜索到）</li>
-<li>登录gitee上的该项目,找到该项目的  [管理]<br><img data-src="/img/webhook1.png" alt="webhook1"></li>
-<li>点击webhook按钮,添加当前项目的webhook（添加的地址一定是可以直接访问,可不设置密码）<br><img data-src="/img/webhook2.png" alt="webhook2"></li>
-<li>在线上创建push.php(push是自定义文件名字)</li>
-<li>写入代码<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">    &#x2F;&#x2F;测试当前脚本能否正常启动,可以解开注释</span><br><span class="line">    &#x2F;&#x2F; $output &#x3D; shell_exec(&#39;ls -lart&#39;);</span><br><span class="line">    &#x2F;&#x2F; echo &quot;&lt;pre&gt;$output&lt;&#x2F;pre&gt;&quot;;</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F;git webhook 自动部署脚本</span><br><span class="line">    &#x2F;&#x2F;项目存放物理路径,第一次clone时,必须保证该目录为空</span><br><span class="line">    $savePath &#x3D; &quot;&#x2F;var&#x2F;www&#x2F;webhook&#x2F;&quot;;    &#x2F;&#x2F;下载到指定目录</span><br><span class="line">    $gitPath  &#x3D; &quot;https:&#x2F;&#x2F;gitee.com&#x2F;yourname&#x2F;hook.git&quot;;&#x2F;&#x2F;代码仓库</span><br><span class="line">    $email &#x3D; &quot;12345678@qq.com&quot;;&#x2F;&#x2F;用户仓库邮箱</span><br><span class="line">    $name  &#x3D; &quot;12345678@qq.com&quot;;&#x2F;&#x2F;仓库用户名,一般和邮箱一致即可</span><br><span class="line"></span><br><span class="line">    $isClone &#x3D; true;&#x2F;&#x2F;设置是否已经Clone到本地,true:已经clone,直接pull,false:先clone.</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F;如果已经clone过,则直接拉去代码</span><br><span class="line">    if ($isClone) &#123;</span><br><span class="line">        $requestBody &#x3D; file_get_contents(&quot;php:&#x2F;&#x2F;input&quot;);</span><br><span class="line">        if (empty($requestBody)) &#123;</span><br><span class="line">            die(&#39;send fail&#39;);</span><br><span class="line">        &#125;</span><br><span class="line">        &#x2F;&#x2F;将Git服务器发出的数据转化为JSON信息</span><br><span class="line">        $content &#x3D; json_decode($requestBody, true);</span><br><span class="line">        &#x2F;&#x2F;多加几个条件判断</span><br><span class="line">        if ($content[&#39;ref&#39;]&#x3D;&#x3D;&#39;refs&#x2F;heads&#x2F;master&#39; &amp;&amp; $content[&#39;total_commits_count&#39;]&gt;0) &#123;</span><br><span class="line">            $res &#x3D; PHP_EOL.&quot;pull 开始 --------&quot;.PHP_EOL;</span><br><span class="line">            $res .&#x3D; shell_exec(&quot;cd &#123;$savePath&#125; &amp;&amp; sudo &#x2F;usr&#x2F;local&#x2F;git-2.11.1&#x2F;bin&#x2F;git pull&quot;);&#x2F;&#x2F;拉去代码</span><br><span class="line">            $res_log &#x3D; &#39;-------------------------&#39;.PHP_EOL;</span><br><span class="line">            $res_log .&#x3D; $content[&#39;user_name&#39;] . &#39; 在&#39; . date(&#39;Y-m-d H:i:s&#39;) . &#39;向&#39; . $content[&#39;repository&#39;][&#39;name&#39;] . &#39;项目的&#39; . $content[&#39;ref&#39;] . &#39;分支push了&#39; . $content[&#39;total_commits_count&#39;] . &#39;个commit：&#39;;</span><br><span class="line">            $res_log .&#x3D; $res.PHP_EOL;</span><br><span class="line">            $res_log .&#x3D; &quot;pull 结束 --------&quot;.PHP_EOL;</span><br><span class="line">            file_put_contents(&quot;webhook_log.txt&quot;, $res_log, FILE_APPEND);&#x2F;&#x2F;写入日志到log文件中</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;else &#123;</span><br><span class="line">        $res &#x3D; &quot;clone 开始 --------&quot;.PHP_EOL;</span><br><span class="line">        $res .&#x3D; shell_exec(&quot;sudo &#x2F;usr&#x2F;local&#x2F;git-2.11.1&#x2F;bin&#x2F;git clone &#123;$gitPath&#125; &#123;$savePath&#125;&quot;).PHP_EOL;&#x2F;&#x2F;执行脚本，clone到指定目录</span><br><span class="line">        $res .&#x3D; &quot;clone 结束 --------&quot;.PHP_EOL;</span><br><span class="line">        file_put_contents(&quot;webhook_log.txt&quot;, $res, FILE_APPEND);&#x2F;&#x2F;写入日志到log文件中</span><br><span class="line">    &#125;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
-
-
-</li>
-</ol>
-<h2 id="基于git的webhook部署可能会出现的问题"><a href="#基于git的webhook部署可能会出现的问题" class="headerlink" title="基于git的webhook部署可能会出现的问题"></a>基于git的webhook部署可能会出现的问题</h2><ol>
-<li><p>线上安装并且配置好git（推荐源码安装git——我的安装在 /var/local/git-2.11.1）</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;天使&quot;              #配置用户名</span><br><span class="line">git config --global user.email &quot;1234567@qq.com&quot;   #配置邮箱</span><br><span class="line">git config --global credential.helper store       #下次git操作不用密码验证</span><br><span class="line">#假设你已经配置好了秘钥</span><br></pre></td></tr></table></figure></li>
-<li><p>文件权限问题（线上操作是root用户,而php执行的push.php是用户——用户组都是www）</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">chown -R www:www &#x2F;var&#x2F;www   #将目录  &#x2F;var&#x2F;www 权限给 www用户组的用户www </span><br><span class="line">chmod 777 &#x2F;var&#x2F;www          #给 目录&#x2F;var&#x2F;www  最高权限</span><br></pre></td></tr></table></figure></li>
-<li><p>php-fpm配置（我的php安装目录就在 /usr/local/php）——配置</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;usr&#x2F;local&#x2F;php&#x2F;sbin&#x2F;php-fpm #启动php-fpm,如果报错，可以找到对应办法</span><br><span class="line">netstat -antup | grep php   #当端口被占用，找到php-fpm的pid，关掉 执行 kill pid</span><br><span class="line">ps -ef | grep php           #查看php用户进程——全部配置为所有者是www</span><br><span class="line">ps -ef | grep php-fpm       #查看php-fpm进程——全部配置为所有者是www</span><br><span class="line"></span><br><span class="line">cd &#x2F;usr&#x2F;local&#x2F;apache2&#x2F;logs  #进入apache的日志目录</span><br><span class="line">cat error_log               #查看错误日志,调试使用 </span><br><span class="line">cd &#x2F;usr&#x2F;local&#x2F;php&#x2F;etc&#x2F;php-fpm.d #进入配置目录</span><br><span class="line">cp www.conf.default www.conf    #复制出www.conf文件,里面配置用户跟用户组,如下图</span><br></pre></td></tr></table></figure>
-<p><img data-src="/img/webhook4.png" alt="webhook4"></p>
-</li>
-<li><p>报错’This account is currently not available’<br>解决：把www用户的配置修改一下，让他的登录shell变成/bin/bash<br>git拉取完项目后再把www用户的nologin选项恢复回去</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">chmod 777 &#x2F;etc&#x2F;passwd       #给passwd文件最高操作权限——一定是在root用户下，才可以编辑修改</span><br><span class="line">chmod 440 &#x2F;etc&#x2F;passwd   #恢复只读权限</span><br></pre></td></tr></table></figure>
-<p><img data-src="/img/webhook5.png" alt="webhook5"> </p>
-</li>
-<li><p>www用户没有免密码设置，因为我的php脚本用户设置的就是www<br><img data-src="/img/webhook3.png" alt="webhook3"><br> 解决：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">chmod 777 &#x2F;etc&#x2F;sudoers  #给最高权限</span><br><span class="line">chmod 440 &#x2F;etc&#x2F;sudoers  #还原只读权限</span><br><span class="line">sudo visudo             #或者直接运行这个，修改配置</span><br><span class="line">进入后，添加</span><br><span class="line">www     ALL&#x3D;NOPASSWD: &#x2F;usr&#x2F;local&#x2F;git-2.11.1&#x2F;bin&#x2F;git     #这是地址是我的git执行位置</span><br><span class="line">www     ALL&#x3D;(ALL:ALL)  NOPASSWD:ALL     #也可添加这种方式</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<p>还有webhook部署问题,需要交流学习,请联系邮箱<a href="mailto:897113156@qq.com">snow_007@foxmail.com</a></p>
-]]></content>
-      <categories>
-        <category>服务端</category>
-        <category>php</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
-        <tag>php</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>snow</title>
     <url>/posts/914597299.html</url>
     <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -820,6 +772,54 @@ WantedBy=multi-user.target</code></pre>]]></content>
       <tags>
         <tag>前端</tag>
         <tag>vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>centOS下基于LAMP环境，使用gitee的webhook完成自动部署</title>
+    <url>/posts/3529366497.html</url>
+    <content><![CDATA[<h2 id="webhook是做什么的？"><a href="#webhook是做什么的？" class="headerlink" title="webhook是做什么的？"></a>webhook是做什么的？</h2><pre><code>当你使用gitee提交项目，利用gitee提供的webhook钩子,触发钩子执行脚本,
+将gitee项目克隆或者更新到自己的线上地址</code></pre><h2 id="centOS下基于LAMP环境，使用gitee的webhook完成自动部署"><a href="#centOS下基于LAMP环境，使用gitee的webhook完成自动部署" class="headerlink" title="centOS下基于LAMP环境，使用gitee的webhook完成自动部署"></a>centOS下基于LAMP环境，使用gitee的webhook完成自动部署</h2><pre><code>必备知识：
+    1. 线上搭建LAMP环境
+    2. git知识
+    3. linux基础
+    4. php基础</code></pre><a id="more"></a>
+<h2 id="大致流程（网上有很多参考-可自行搜索）"><a href="#大致流程（网上有很多参考-可自行搜索）" class="headerlink" title="大致流程（网上有很多参考,可自行搜索）"></a>大致流程（网上有很多参考,可自行搜索）</h2><ol>
+<li>首先在gitee上创建一个项目（可以搜索到）</li>
+<li>登录gitee上的该项目,找到该项目的  [管理]<br><img data-src="/img/webhook1.png" alt="webhook1"></li>
+<li>点击webhook按钮,添加当前项目的webhook（添加的地址一定是可以直接访问,可不设置密码）<br><img data-src="/img/webhook2.png" alt="webhook2"></li>
+<li>在线上创建push.php(push是自定义文件名字)</li>
+<li>写入代码<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">    &#x2F;&#x2F;测试当前脚本能否正常启动,可以解开注释</span><br><span class="line">    &#x2F;&#x2F; $output &#x3D; shell_exec(&#39;ls -lart&#39;);</span><br><span class="line">    &#x2F;&#x2F; echo &quot;&lt;pre&gt;$output&lt;&#x2F;pre&gt;&quot;;</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F;git webhook 自动部署脚本</span><br><span class="line">    &#x2F;&#x2F;项目存放物理路径,第一次clone时,必须保证该目录为空</span><br><span class="line">    $savePath &#x3D; &quot;&#x2F;var&#x2F;www&#x2F;webhook&#x2F;&quot;;    &#x2F;&#x2F;下载到指定目录</span><br><span class="line">    $gitPath  &#x3D; &quot;https:&#x2F;&#x2F;gitee.com&#x2F;yourname&#x2F;hook.git&quot;;&#x2F;&#x2F;代码仓库</span><br><span class="line">    $email &#x3D; &quot;12345678@qq.com&quot;;&#x2F;&#x2F;用户仓库邮箱</span><br><span class="line">    $name  &#x3D; &quot;12345678@qq.com&quot;;&#x2F;&#x2F;仓库用户名,一般和邮箱一致即可</span><br><span class="line"></span><br><span class="line">    $isClone &#x3D; true;&#x2F;&#x2F;设置是否已经Clone到本地,true:已经clone,直接pull,false:先clone.</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F;如果已经clone过,则直接拉去代码</span><br><span class="line">    if ($isClone) &#123;</span><br><span class="line">        $requestBody &#x3D; file_get_contents(&quot;php:&#x2F;&#x2F;input&quot;);</span><br><span class="line">        if (empty($requestBody)) &#123;</span><br><span class="line">            die(&#39;send fail&#39;);</span><br><span class="line">        &#125;</span><br><span class="line">        &#x2F;&#x2F;将Git服务器发出的数据转化为JSON信息</span><br><span class="line">        $content &#x3D; json_decode($requestBody, true);</span><br><span class="line">        &#x2F;&#x2F;多加几个条件判断</span><br><span class="line">        if ($content[&#39;ref&#39;]&#x3D;&#x3D;&#39;refs&#x2F;heads&#x2F;master&#39; &amp;&amp; $content[&#39;total_commits_count&#39;]&gt;0) &#123;</span><br><span class="line">            $res &#x3D; PHP_EOL.&quot;pull 开始 --------&quot;.PHP_EOL;</span><br><span class="line">            $res .&#x3D; shell_exec(&quot;cd &#123;$savePath&#125; &amp;&amp; sudo &#x2F;usr&#x2F;local&#x2F;git-2.11.1&#x2F;bin&#x2F;git pull&quot;);&#x2F;&#x2F;拉去代码</span><br><span class="line">            $res_log &#x3D; &#39;-------------------------&#39;.PHP_EOL;</span><br><span class="line">            $res_log .&#x3D; $content[&#39;user_name&#39;] . &#39; 在&#39; . date(&#39;Y-m-d H:i:s&#39;) . &#39;向&#39; . $content[&#39;repository&#39;][&#39;name&#39;] . &#39;项目的&#39; . $content[&#39;ref&#39;] . &#39;分支push了&#39; . $content[&#39;total_commits_count&#39;] . &#39;个commit：&#39;;</span><br><span class="line">            $res_log .&#x3D; $res.PHP_EOL;</span><br><span class="line">            $res_log .&#x3D; &quot;pull 结束 --------&quot;.PHP_EOL;</span><br><span class="line">            file_put_contents(&quot;webhook_log.txt&quot;, $res_log, FILE_APPEND);&#x2F;&#x2F;写入日志到log文件中</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;else &#123;</span><br><span class="line">        $res &#x3D; &quot;clone 开始 --------&quot;.PHP_EOL;</span><br><span class="line">        $res .&#x3D; shell_exec(&quot;sudo &#x2F;usr&#x2F;local&#x2F;git-2.11.1&#x2F;bin&#x2F;git clone &#123;$gitPath&#125; &#123;$savePath&#125;&quot;).PHP_EOL;&#x2F;&#x2F;执行脚本，clone到指定目录</span><br><span class="line">        $res .&#x3D; &quot;clone 结束 --------&quot;.PHP_EOL;</span><br><span class="line">        file_put_contents(&quot;webhook_log.txt&quot;, $res, FILE_APPEND);&#x2F;&#x2F;写入日志到log文件中</span><br><span class="line">    &#125;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<h2 id="基于git的webhook部署可能会出现的问题"><a href="#基于git的webhook部署可能会出现的问题" class="headerlink" title="基于git的webhook部署可能会出现的问题"></a>基于git的webhook部署可能会出现的问题</h2><ol>
+<li><p>线上安装并且配置好git（推荐源码安装git——我的安装在 /var/local/git-2.11.1）</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;天使&quot;              #配置用户名</span><br><span class="line">git config --global user.email &quot;1234567@qq.com&quot;   #配置邮箱</span><br><span class="line">git config --global credential.helper store       #下次git操作不用密码验证</span><br><span class="line">#假设你已经配置好了秘钥</span><br></pre></td></tr></table></figure></li>
+<li><p>文件权限问题（线上操作是root用户,而php执行的push.php是用户——用户组都是www）</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">chown -R www:www &#x2F;var&#x2F;www   #将目录  &#x2F;var&#x2F;www 权限给 www用户组的用户www </span><br><span class="line">chmod 777 &#x2F;var&#x2F;www          #给 目录&#x2F;var&#x2F;www  最高权限</span><br></pre></td></tr></table></figure></li>
+<li><p>php-fpm配置（我的php安装目录就在 /usr/local/php）——配置</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;usr&#x2F;local&#x2F;php&#x2F;sbin&#x2F;php-fpm #启动php-fpm,如果报错，可以找到对应办法</span><br><span class="line">netstat -antup | grep php   #当端口被占用，找到php-fpm的pid，关掉 执行 kill pid</span><br><span class="line">ps -ef | grep php           #查看php用户进程——全部配置为所有者是www</span><br><span class="line">ps -ef | grep php-fpm       #查看php-fpm进程——全部配置为所有者是www</span><br><span class="line"></span><br><span class="line">cd &#x2F;usr&#x2F;local&#x2F;apache2&#x2F;logs  #进入apache的日志目录</span><br><span class="line">cat error_log               #查看错误日志,调试使用 </span><br><span class="line">cd &#x2F;usr&#x2F;local&#x2F;php&#x2F;etc&#x2F;php-fpm.d #进入配置目录</span><br><span class="line">cp www.conf.default www.conf    #复制出www.conf文件,里面配置用户跟用户组,如下图</span><br></pre></td></tr></table></figure>
+<p><img data-src="/img/webhook4.png" alt="webhook4"></p>
+</li>
+<li><p>报错’This account is currently not available’<br>解决：把www用户的配置修改一下，让他的登录shell变成/bin/bash<br>git拉取完项目后再把www用户的nologin选项恢复回去</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">chmod 777 &#x2F;etc&#x2F;passwd       #给passwd文件最高操作权限——一定是在root用户下，才可以编辑修改</span><br><span class="line">chmod 440 &#x2F;etc&#x2F;passwd   #恢复只读权限</span><br></pre></td></tr></table></figure>
+<p><img data-src="/img/webhook5.png" alt="webhook5"> </p>
+</li>
+<li><p>www用户没有免密码设置，因为我的php脚本用户设置的就是www<br><img data-src="/img/webhook3.png" alt="webhook3"><br> 解决：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">chmod 777 &#x2F;etc&#x2F;sudoers  #给最高权限</span><br><span class="line">chmod 440 &#x2F;etc&#x2F;sudoers  #还原只读权限</span><br><span class="line">sudo visudo             #或者直接运行这个，修改配置</span><br><span class="line">进入后，添加</span><br><span class="line">www     ALL&#x3D;NOPASSWD: &#x2F;usr&#x2F;local&#x2F;git-2.11.1&#x2F;bin&#x2F;git     #这是地址是我的git执行位置</span><br><span class="line">www     ALL&#x3D;(ALL:ALL)  NOPASSWD:ALL     #也可添加这种方式</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<p>还有webhook部署问题,需要交流学习,请联系邮箱<a href="mailto:897113156@qq.com">snow_007@foxmail.com</a></p>
+]]></content>
+      <categories>
+        <category>服务端</category>
+        <category>php</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+        <tag>php</tag>
       </tags>
   </entry>
 </search>
