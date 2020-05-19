@@ -25,15 +25,16 @@
       </tags>
   </entry>
   <entry>
-    <title>JS</title>
-    <url>/posts/3106780478.html</url>
-    <content><![CDATA[]]></content>
+    <title>angular</title>
+    <url>/posts/1988130116.html</url>
+    <content><![CDATA[<h2 id="angular之脏检查"><a href="#angular之脏检查" class="headerlink" title="angular之脏检查"></a>angular之脏检查</h2>]]></content>
       <categories>
         <category>前端</category>
-        <category>JS</category>
+        <category>angular</category>
       </categories>
       <tags>
-        <tag>JS</tag>
+        <tag>前端</tag>
+        <tag>angular</tag>
       </tags>
   </entry>
   <entry>
@@ -49,15 +50,28 @@
       </tags>
   </entry>
   <entry>
-    <title>Node</title>
-    <url>/posts/625821563.html</url>
-    <content><![CDATA[]]></content>
+    <title>axios</title>
+    <url>/posts/2694088402.html</url>
+    <content><![CDATA[<h1 id="axios代理服务器"><a href="#axios代理服务器" class="headerlink" title="axios代理服务器"></a>axios代理服务器</h1>]]></content>
       <categories>
-        <category>前端</category>
-        <category>Node</category>
+        <category>运维</category>
+        <category>axios</category>
       </categories>
       <tags>
-        <tag>Node</tag>
+        <tag>前端</tag>
+        <tag>axios</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ftp 操作</title>
+    <url>/posts/3194002123.html</url>
+    <content><![CDATA[<h1 id="ftp基本操作"><a href="#ftp基本操作" class="headerlink" title="ftp基本操作"></a>ftp基本操作</h1>]]></content>
+      <categories>
+        <category>运维</category>
+        <category>ftp</category>
+      </categories>
+      <tags>
+        <tag>ftp</tag>
       </tags>
   </entry>
   <entry>
@@ -155,41 +169,24 @@ vim /etc/httpd/conf/httpd.conf  #修改apache配置,其他服务名，端口配�
       </tags>
   </entry>
   <entry>
-    <title>angular</title>
-    <url>/posts/1988130116.html</url>
-    <content><![CDATA[<h2 id="angular之脏检查"><a href="#angular之脏检查" class="headerlink" title="angular之脏检查"></a>angular之脏检查</h2>]]></content>
+    <title>gulp</title>
+    <url>/posts/1287843722.html</url>
+    <content><![CDATA[<h1 id="关于gulp-4-的同步，异步执行任务"><a href="#关于gulp-4-的同步，异步执行任务" class="headerlink" title="关于gulp 4.* 的同步，异步执行任务"></a>关于gulp 4.* 的同步，异步执行任务</h1><blockquote>
+<p>series 方法会按照顺序执行，即同步执行<br>parallel 方法胡同时执行，并行执行<br>它们的参数一定是gulp的task活动，返回stream</p>
+</blockquote>
+<p><a href="https://www.gulpjs.com.cn/" target="_blank" rel="noopener">gulp官方</a></p>
+<a id="more"></a>
+<h1 id="压缩js，css，html文件（其他类同）"><a href="#压缩js，css，html文件（其他类同）" class="headerlink" title="压缩js，css，html文件（其他类同）"></a>压缩js，css，html文件（其他类同）</h1><h2 id="要打包的文件根目录创建-gulpfile-js，以下内容写入"><a href="#要打包的文件根目录创建-gulpfile-js，以下内容写入" class="headerlink" title="要打包的文件根目录创建 gulpfile.js，以下内容写入"></a>要打包的文件根目录创建 gulpfile.js，以下内容写入</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">var gulp &#x3D; require(&#39;gulp&#39;);</span><br><span class="line">var minifycss &#x3D; require(&#39;gulp-minify-css&#39;);&#x2F;&#x2F;压缩css</span><br><span class="line">var uglify &#x3D; require(&#39;gulp-uglify&#39;);&#x2F;&#x2F;压缩js</span><br><span class="line">var concat &#x3D; require(&#39;gulp-concat&#39;); &#x2F;&#x2F;合并文件</span><br><span class="line">var htmlmin &#x3D; require(&#39;gulp-htmlmin&#39;);&#x2F;&#x2F;压缩html</span><br><span class="line">&#x2F;&#x2F; var htmlclean &#x3D; require(&#39;gulp-htmlclean&#39;); &#x2F;&#x2F;清空html文件</span><br><span class="line">var  plumber&#x3D;require(&#39;gulp-plumber&#39;); &#x2F;&#x2F;检测错误</span><br><span class="line">var gutil&#x3D;require(&#39;gulp-util&#39;);&#x2F;&#x2F;如果有自定义方法，会用到</span><br><span class="line">var processhtml &#x3D; require(&#39;gulp-processhtml&#39;);</span><br><span class="line">var Replace &#x3D; require(&#39;gulp-replace&#39;);&#x2F;&#x2F;文件名替换</span><br><span class="line">var clean &#x3D; require(&#39;gulp-clean&#39;); &#x2F;&#x2F;删除文件、文件夹的插件</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">var date &#x3D; new Date().getTime();</span><br><span class="line"></span><br><span class="line">gulp.task(&#39;clean&#39;,function()&#123;</span><br><span class="line">    return gulp.src(&#39;min&#x2F;**&#39;,&#123;read:false&#125;)</span><br><span class="line">        .pipe(clean());</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 控制台发声,错误时beep一下</span><br><span class="line">function errrHandler( e )&#123;  </span><br><span class="line">    gutil.beep();</span><br><span class="line">    gutil.log(e);</span><br><span class="line">    this.emit(&#39;end&#39;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;压缩css</span><br><span class="line">gulp.task(&#39;mincss&#39;, function ()&#123;</span><br><span class="line">    &#x2F;&#x2F; return gulp.src(&#39;css&#x2F;*.css&#39;)</span><br><span class="line">    return gulp.src([&#39;css&#x2F;b.css&#39;,&#39;css&#x2F;a.css&#39;])&#x2F;&#x2F;按顺序压缩，也可使用插件 gulp-order</span><br><span class="line">        .pipe(concat(&#39;all.css&#39;))&#x2F;&#x2F;合成到一个css</span><br><span class="line">        .pipe(gulp.dest(&#39;min&#x2F;&#39;))&#x2F;&#x2F;输出到css目录</span><br><span class="line">        .pipe(minifycss())&#x2F;&#x2F;压缩css到一样</span><br><span class="line">        .pipe(concat(&#39;all.min.css&#39;))&#x2F;&#x2F;压缩后的css</span><br><span class="line">        .pipe(gulp.dest(&#39;min&#x2F;&#39;));&#x2F;&#x2F;输出到css目录</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 压缩js文件</span><br><span class="line">gulp.task(&#39;minjs&#39;, function() &#123;</span><br><span class="line">    return gulp.src([&#39;.&#x2F;js&#x2F;**&#x2F;*.js&#39;])</span><br><span class="line">        .pipe(concat(&#39;all.js&#39;))</span><br><span class="line">        .pipe(uglify())</span><br><span class="line">        .pipe(gulp.dest(&#39;min&#39;));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 压缩html</span><br><span class="line">gulp.task(&#39;minhtml&#39;, function () &#123;</span><br><span class="line">    var options &#x3D; &#123;</span><br><span class="line">        removeComments: true,&#x2F;&#x2F;清除HTML注释</span><br><span class="line">        collapseWhitespace: true,&#x2F;&#x2F;压缩HTML</span><br><span class="line">        collapseBooleanAttributes: false,&#x2F;&#x2F;省略布尔属性的值 &lt;input checked&#x3D;&quot;true&quot;&#x2F;&gt; &#x3D;&#x3D;&gt; &lt;input &#x2F;&gt;</span><br><span class="line">        removeEmptyAttributes: false,&#x2F;&#x2F;删除所有空格作属性值 &lt;input id&#x3D;&quot;&quot; &#x2F;&gt; &#x3D;&#x3D;&gt; &lt;input &#x2F;&gt;</span><br><span class="line">        removeScriptTypeAttributes: true,&#x2F;&#x2F;删除&lt;script&gt;的type&#x3D;&quot;text&#x2F;javascript&quot;</span><br><span class="line">        removeStyleLinkTypeAttributes: true,&#x2F;&#x2F;删除&lt;style&gt;和&lt;link&gt;的type&#x3D;&quot;text&#x2F;css&quot;</span><br><span class="line">        minifyJS: true,&#x2F;&#x2F;压缩页面JS</span><br><span class="line">        minifyCSS: true&#x2F;&#x2F;压缩页面CSS</span><br><span class="line">    &#125;;</span><br><span class="line">    return gulp.src([&#39;.&#x2F;*.html&#39;])       </span><br><span class="line">        .pipe(plumber(&#123;errorHandler:errrHandler&#125;))     </span><br><span class="line">        .pipe(Replace(&#x2F;_VERSION_&#x2F;gi, date))</span><br><span class="line">        .pipe(processhtml())</span><br><span class="line">        .pipe(htmlmin(options))</span><br><span class="line">        .pipe(gulp.dest(&#39;min&#39;));</span><br><span class="line">&#125;);</span><br><span class="line">&#x2F;&#x2F; 生成目标html替换生成的html文件的js，css文件</span><br><span class="line"></span><br><span class="line">gulp.task(&#39;replacedev&#39;, function()&#123;</span><br><span class="line">    return gulp.src([&#39;min&#x2F;&#39;+&#39;*.html&#39;])</span><br><span class="line">        .pipe(Replace(&#39;common.js&#39;, &#39;all.js&#39;))</span><br><span class="line">        .pipe(Replace(&#39;common.css&#39;, &#39;all.css&#39;))</span><br><span class="line">        .pipe(gulp.dest(&#39;min&#x2F;&#39;));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 默认任务 gulp 4.0 适用的方式</span><br><span class="line">gulp.task(&#39;default&#39;, gulp.series(&#39;clean&#39;,&#39;mincss&#39;,&#39;minjs&#39;,&#39;minhtml&#39;,&#39;replacedev&#39;));</span><br></pre></td></tr></table></figure>
+<h2 id="运行gulp"><a href="#运行gulp" class="headerlink" title="运行gulp"></a>运行gulp</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">gulp  #默认执行 gulp default</span><br></pre></td></tr></table></figure>
+<h2 id="注意问题"><a href="#注意问题" class="headerlink" title="注意问题"></a>注意问题</h2><pre><code>1. task() 里面一定要写成返回值  return gulp.src（....）——返回值就符合steam
+2. 多个任务按顺序执行，使用 series() 方法 （很多错误原因是用parallel方法）</code></pre>]]></content>
       <categories>
         <category>前端</category>
-        <category>angular</category>
+        <category>gulp</category>
       </categories>
       <tags>
-        <tag>前端</tag>
-        <tag>angular</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>axios</title>
-    <url>/posts/2694088402.html</url>
-    <content><![CDATA[<h1 id="axios代理服务器"><a href="#axios代理服务器" class="headerlink" title="axios代理服务器"></a>axios代理服务器</h1>]]></content>
-      <categories>
-        <category>运维</category>
-        <category>axios</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>axios</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ftp 操作</title>
-    <url>/posts/3194002123.html</url>
-    <content><![CDATA[<h1 id="ftp基本操作"><a href="#ftp基本操作" class="headerlink" title="ftp基本操作"></a>ftp基本操作</h1>]]></content>
-      <categories>
-        <category>运维</category>
-        <category>ftp</category>
-      </categories>
-      <tags>
-        <tag>ftp</tag>
+        <tag>gulp</tag>
+        <tag>工具</tag>
       </tags>
   </entry>
   <entry>
@@ -250,6 +247,18 @@ vim /etc/httpd/conf/httpd.conf  #修改apache配置,其他服务名，端口配�
       </tags>
   </entry>
   <entry>
+    <title>js</title>
+    <url>/posts/3106780478.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>前端</category>
+        <category>js</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo插件</title>
     <url>/posts/1514123638.html</url>
     <content><![CDATA[<h2 id="Hexo插件篇"><a href="#Hexo插件篇" class="headerlink" title="Hexo插件篇"></a>Hexo插件篇</h2><h2 id="Valine聊天"><a href="#Valine聊天" class="headerlink" title="Valine聊天"></a>Valine聊天</h2><pre><code>1. 参考官网安装即可
@@ -297,6 +306,25 @@ sudo visudo     #修改sudo配置文件</code></pre><h1 id="ps-ef和ps-aux的区
 ps -ef</code></pre><p><a href="https://www.cnblogs.com/mydriverc/p/8303242.html" target="_blank" rel="noopener">ps -ef和ps aux详解</a></p>
 <h1 id="linux的grep-命令跟-netstat命令"><a href="#linux的grep-命令跟-netstat命令" class="headerlink" title="linux的grep 命令跟 netstat命令"></a>linux的grep 命令跟 netstat命令</h1><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">grep——Global Regular Expression Print——匹配指定内容</span><br><span class="line">ps aux|grep php     #查看php进程信息</span><br><span class="line"></span><br><span class="line">netstat    用于显示各种网络相关信息</span><br><span class="line">参数 </span><br><span class="line">-a  所有选项</span><br><span class="line">-t (tcp)仅显示tcp相关</span><br><span class="line">-u (udp)仅显示udp相关</span><br><span class="line">-n 拒绝显示别名</span><br><span class="line">-l 仅列出有在 Listen (监听) 的服务状态,liru socket</span><br><span class="line">-p 显示建立相关链接的程序名</span><br><span class="line">-r 显示路由信息，路由表 </span><br><span class="line">-e 显示扩展信息，例如uid等 </span><br><span class="line">-s 按各个协议进行统计 </span><br><span class="line">-c 每隔一个固定时间，执行该netstat命令</span><br><span class="line"></span><br><span class="line">netstat -antup              #所有端口</span><br><span class="line">netstat -antup | grep ftp   #显示ftp相关端口</span><br></pre></td></tr></table></figure></code></pre><p><a href="https://www.cnblogs.com/mydriverc/p/8303242.html" target="_blank" rel="noopener">grep匹配</a>     <a href="https://www.cnblogs.com/sparkdev/p/11294517.html" target="_blank" rel="noopener">netstat详解</a></p>
 <h1 id="查找软件安装地址"><a href="#查找软件安装地址" class="headerlink" title="查找软件安装地址"></a>查找软件安装地址</h1><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">whereis nginx</span><br><span class="line">find &#x2F; -name mod_dav_svn.so</span><br><span class="line">find &#x2F; -name httpd.pid  #查找模块位置</span><br></pre></td></tr></table></figure></code></pre>]]></content>
+      <categories>
+        <category>服务端</category>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux findSofe</title>
+    <url>/posts/1207104400.html</url>
+    <content><![CDATA[<h1 id="centOS7查找安装文件后的路径"><a href="#centOS7查找安装文件后的路径" class="headerlink" title="centOS7查找安装文件后的路径"></a>centOS7查找安装文件后的路径</h1><pre><code>问题描述：如何查看yum install xx 安装文件后的路径</code></pre><h2 id="以安装svnserve文件为例"><a href="#以安装svnserve文件为例" class="headerlink" title="以安装svnserve文件为例"></a>以安装svnserve文件为例</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yum install subversion</span><br></pre></td></tr></table></figure>
+<h2 id="rpm和管道查找具体安装文件全称"><a href="#rpm和管道查找具体安装文件全称" class="headerlink" title="rpm和管道查找具体安装文件全称"></a>rpm和管道查找具体安装文件全称</h2><ol>
+<li>列出所有安装的  subversion<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rpm -q  |grep subversion    #软件是否安装</span><br><span class="line">rpm -qa |grep subversion    #查找安装文件全称</span><br><span class="line">rpm -ql |grep subversion    #列出软件包安装的文件</span><br><span class="line">rpm -qal|grep subversion    #查找所有相关存储文件，包括路径</span><br></pre></td></tr></table></figure>
+<img data-src="/img/centOS1.png" alt="查找位置"></li>
+<li>使用命令 rpm -q |grep subversion-1.7.14-14.el7.x86_64 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rpm -q |grep subversion-1.7.14-14.el7.x86_64   #根据具体文件全称显示安装后文件所在路径</span><br><span class="line">rpm -qa |grep subversion-1.7.14-14.el7.x86_64   #根据具体文件全称显示安装后文件所在路径</span><br></pre></td></tr></table></figure>
+ -q是 query   -a是 all     -l是 list</li>
+</ol>
+]]></content>
       <categories>
         <category>服务端</category>
         <category>linux</category>
@@ -427,6 +455,47 @@ ps -ef</code></pre><p><a href="https://www.cnblogs.com/mydriverc/p/8303242.html"
       </tags>
   </entry>
   <entry>
+    <title>linux 环境变量</title>
+    <url>/posts/183057146.html</url>
+    <content><![CDATA[<h1 id="linux-环境变量配置"><a href="#linux-环境变量配置" class="headerlink" title="linux 环境变量配置"></a>linux 环境变量配置</h1><pre><code>我们来看看执行的顺序：
+    1./etc/profile
+    2./etc/environment
+    3.~/.bash_profile
+    4.~/.bashrc
+    5./etc/bashrc
+source ~/.bashrc #保存设置，立即生效</code></pre>]]></content>
+      <categories>
+        <category>服务端</category>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux 用户</title>
+    <url>/posts/338578885.html</url>
+    <content><![CDATA[<h1 id="理解-etc-passwd-里面的文件信息"><a href="#理解-etc-passwd-里面的文件信息" class="headerlink" title="理解 /etc/passwd 里面的文件信息"></a>理解 /etc/passwd 里面的文件信息</h1><pre><code>apache:x:48:48:Apache:/usr/share/httpd:/sbin/nologin    #对应的含义
+用户名  : 
+密码，出于安全考虑，均显示x: 
+用户id:UID
+用户组id:GID
+备注:
+用户home目录:
+shell命令所在目录:/sbin/nologin意思是无法登陆系统</code></pre><a id="more"></a>
+<h1 id="一、-查看所有用户"><a href="#一、-查看所有用户" class="headerlink" title="一、 查看所有用户"></a>一、 查看所有用户</h1><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cat &#x2F;etc&#x2F;passwd     #例如下</span><br><span class="line">apache:x:48:48:Apache:&#x2F;usr&#x2F;share&#x2F;httpd:&#x2F;sbin&#x2F;nologin</span><br><span class="line">cat &#x2F;etc&#x2F;group      #例如下</span><br><span class="line">group_name:passwd:GID:user_list</span><br><span class="line">组名：密码：组ID：所有用户</span><br></pre></td></tr></table></figure></code></pre><h1 id="添加删除用户"><a href="#添加删除用户" class="headerlink" title="添加删除用户"></a>添加删除用户</h1><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">adduser snow        #添加用户snow，并且&#x2F;home&#x2F;snow自动生成</span><br><span class="line">userdel -r snow     #删除用户，&#x2F;home&#x2F;snow也会自动删除</span><br><span class="line">passwd snow         #为用户snow添加密码</span><br></pre></td></tr></table></figure></code></pre><h1 id="用户和组常用命令"><a href="#用户和组常用命令" class="headerlink" title="用户和组常用命令"></a>用户和组常用命令</h1><pre><code>groups      #查看当前登录用户的组内成员
+groups test #查看test用户所在的组,以及组内成员
+whoami      #查看当前登录用户名
+cat /etc/passwd|grep snow #查找snow用户</code></pre>]]></content>
+      <categories>
+        <category>服务端</category>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>linux install git</title>
     <url>/posts/3337199416.html</url>
     <content><![CDATA[<h2 id="在centOS7源码安装git"><a href="#在centOS7源码安装git" class="headerlink" title="在centOS7源码安装git"></a>在centOS7源码安装git</h2><pre><code>摘录：不使用 yum install git,这样安装的git版本低
@@ -469,43 +538,6 @@ ps -ef</code></pre><p><a href="https://www.cnblogs.com/mydriverc/p/8303242.html"
       </tags>
   </entry>
   <entry>
-    <title>linux findSofe</title>
-    <url>/posts/1207104400.html</url>
-    <content><![CDATA[<h1 id="centOS7查找安装文件后的路径"><a href="#centOS7查找安装文件后的路径" class="headerlink" title="centOS7查找安装文件后的路径"></a>centOS7查找安装文件后的路径</h1><pre><code>问题描述：如何查看yum install xx 安装文件后的路径</code></pre><h2 id="以安装svnserve文件为例"><a href="#以安装svnserve文件为例" class="headerlink" title="以安装svnserve文件为例"></a>以安装svnserve文件为例</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yum install subversion</span><br></pre></td></tr></table></figure>
-<h2 id="rpm和管道查找具体安装文件全称"><a href="#rpm和管道查找具体安装文件全称" class="headerlink" title="rpm和管道查找具体安装文件全称"></a>rpm和管道查找具体安装文件全称</h2><ol>
-<li>列出所有安装的  subversion<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rpm -q  |grep subversion    #软件是否安装</span><br><span class="line">rpm -qa |grep subversion    #查找安装文件全称</span><br><span class="line">rpm -ql |grep subversion    #列出软件包安装的文件</span><br><span class="line">rpm -qal|grep subversion    #查找所有相关存储文件，包括路径</span><br></pre></td></tr></table></figure>
-<img data-src="/img/centOS1.png" alt="查找位置"></li>
-<li>使用命令 rpm -q |grep subversion-1.7.14-14.el7.x86_64 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rpm -q |grep subversion-1.7.14-14.el7.x86_64   #根据具体文件全称显示安装后文件所在路径</span><br><span class="line">rpm -qa |grep subversion-1.7.14-14.el7.x86_64   #根据具体文件全称显示安装后文件所在路径</span><br></pre></td></tr></table></figure>
- -q是 query   -a是 all     -l是 list</li>
-</ol>
-]]></content>
-      <categories>
-        <category>服务端</category>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>linux 环境变量</title>
-    <url>/posts/183057146.html</url>
-    <content><![CDATA[<h1 id="linux-环境变量配置"><a href="#linux-环境变量配置" class="headerlink" title="linux 环境变量配置"></a>linux 环境变量配置</h1><pre><code>我们来看看执行的顺序：
-    1./etc/profile
-    2./etc/environment
-    3.~/.bash_profile
-    4.~/.bashrc
-    5./etc/bashrc
-source ~/.bashrc #保存设置，立即生效</code></pre>]]></content>
-      <categories>
-        <category>服务端</category>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>linux 软件安装位置</title>
     <url>/posts/1219779716.html</url>
     <content><![CDATA[<h1 id="Linux系统使用yum安装跟源码安装区别"><a href="#Linux系统使用yum安装跟源码安装区别" class="headerlink" title="Linux系统使用yum安装跟源码安装区别"></a>Linux系统使用yum安装跟源码安装区别</h1><pre><code>摘录:
@@ -530,29 +562,6 @@ systemctl start httpd.service   # centos7版本
 
 rpm包安装后开机自启动的方法</code></pre><h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p><a href="https://www.cnblogs.com/gmlkl/p/9354254.html#_label9" target="_blank" rel="noopener">以上三种安装区别</a><br><a href="https://blog.csdn.net/yu876876/article/details/79739413" target="_blank" rel="noopener">yum安装与rpm安装的区别</a></p>
 ]]></content>
-      <categories>
-        <category>服务端</category>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>linux 用户</title>
-    <url>/posts/338578885.html</url>
-    <content><![CDATA[<h1 id="理解-etc-passwd-里面的文件信息"><a href="#理解-etc-passwd-里面的文件信息" class="headerlink" title="理解 /etc/passwd 里面的文件信息"></a>理解 /etc/passwd 里面的文件信息</h1><pre><code>apache:x:48:48:Apache:/usr/share/httpd:/sbin/nologin    #对应的含义
-用户名  : 
-密码，出于安全考虑，均显示x: 
-用户id:UID
-用户组id:GID
-备注:
-用户home目录:
-shell命令所在目录:/sbin/nologin意思是无法登陆系统</code></pre><a id="more"></a>
-<h1 id="一、-查看所有用户"><a href="#一、-查看所有用户" class="headerlink" title="一、 查看所有用户"></a>一、 查看所有用户</h1><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cat &#x2F;etc&#x2F;passwd     #例如下</span><br><span class="line">apache:x:48:48:Apache:&#x2F;usr&#x2F;share&#x2F;httpd:&#x2F;sbin&#x2F;nologin</span><br><span class="line">cat &#x2F;etc&#x2F;group      #例如下</span><br><span class="line">group_name:passwd:GID:user_list</span><br><span class="line">组名：密码：组ID：所有用户</span><br></pre></td></tr></table></figure></code></pre><h1 id="添加删除用户"><a href="#添加删除用户" class="headerlink" title="添加删除用户"></a>添加删除用户</h1><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">adduser snow        #添加用户snow，并且&#x2F;home&#x2F;snow自动生成</span><br><span class="line">userdel -r snow     #删除用户，&#x2F;home&#x2F;snow也会自动删除</span><br><span class="line">passwd snow         #为用户snow添加密码</span><br></pre></td></tr></table></figure></code></pre><h1 id="用户和组常用命令"><a href="#用户和组常用命令" class="headerlink" title="用户和组常用命令"></a>用户和组常用命令</h1><pre><code>groups      #查看当前登录用户的组内成员
-groups test #查看test用户所在的组,以及组内成员
-whoami      #查看当前登录用户名
-cat /etc/passwd|grep snow #查找snow用户</code></pre>]]></content>
       <categories>
         <category>服务端</category>
         <category>linux</category>
@@ -689,18 +698,115 @@ WantedBy=multi-user.target</code></pre>]]></content>
       </tags>
   </entry>
   <entry>
-    <title>php fpm</title>
-    <url>/posts/3224789851.html</url>
-    <content><![CDATA[<h1 id="fpm进程池"><a href="#fpm进程池" class="headerlink" title="fpm进程池"></a>fpm进程池</h1><pre><code>摘录：
-    php-fpm ：php 是作为一个独立服务存在的，这个服务叫做 php-fpm
-    php-fpm pool ： php-fpm进程池，这个进程池中运行了多个子进程，用来并发处理所有连接的动态请求
-    配置多个pool：apache或者Nginx接收到php动态请求，传给php-fpm处理，然后调用pool中的子进程处理动态请求</code></pre><h1 id="配置文件地址（假设你的是inux系统）"><a href="#配置文件地址（假设你的是inux系统）" class="headerlink" title="配置文件地址（假设你的是inux系统）"></a>配置文件地址（假设你的是inux系统）</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cat &#x2F;usr&#x2F;local&#x2F;php&#x2F;etc&#x2F;php-fpm.conf         #查看配置目录</span><br><span class="line">cd &#x2F;usr&#x2F;local&#x2F;php&#x2F;etc&#x2F;php-fpm.d             #进入拓展配置目录</span><br><span class="line">cd &#x2F;usr&#x2F;local&#x2F;php&#x2F;etc&#x2F;php-fpm.d             #进入拓展配置目录</span><br><span class="line">cat &#x2F;usr&#x2F;local&#x2F;php&#x2F;etc&#x2F;php-fpm.d&#x2F;www.conf   #查看拓展配置文件</span><br><span class="line">    可以配置用户组、用户名,多个子进程</span><br><span class="line"></span><br><span class="line">&#x2F;usr&#x2F;local&#x2F;php&#x2F;sbin&#x2F;php-fpm                 #启动fpm进程,报错后,可以修改配置</span><br><span class="line">ps aux|grep php-fpm                         #查看fpm进程</span><br><span class="line">netstat -antup | grep php-fpm               #查看端口PID,kill PID 进程,再重启</span><br></pre></td></tr></table></figure>]]></content>
+    <title>node nvm</title>
+    <url>/posts/3071766044.html</url>
+    <content><![CDATA[<h1 id="nvm使用以及制定node版本"><a href="#nvm使用以及制定node版本" class="headerlink" title="nvm使用以及制定node版本"></a>nvm使用以及制定node版本</h1><blockquote>
+<p>nvm 就是 node版本管理</p>
+</blockquote>
+<h1 id="windows下的安装："><a href="#windows下的安装：" class="headerlink" title="windows下的安装："></a>windows下的安装：</h1><ol>
+<li>nvm下载地址：<a href="https://github.com/coreybutler/nvm-windows/releases" target="_blank" rel="noopener">https://github.com/coreybutler/nvm-windows/releases</a>,选择 nvm-setup.zip </li>
+<li>点下一步就ok ,运行 nvm version  查看nvm版本</li>
+<li>配置node跟npm镜像<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nvm node_mirror https:&#x2F;&#x2F;npm.taobao.org&#x2F;mirrors&#x2F;node&#x2F;</span><br><span class="line">nvm npm_mirror  https:&#x2F;&#x2F;npm.taobao.org&#x2F;mirrors&#x2F;npm&#x2F;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="windows下-nvm-的命令-中的参数可有可无-："><a href="#windows下-nvm-的命令-中的参数可有可无-：" class="headerlink" title="windows下 nvm 的命令([]中的参数可有可无)："></a>windows下 nvm 的命令([]中的参数可有可无)：</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>nvm arch</td>
+<td>查看当前系统的位数和当前nodejs的位数</td>
+</tr>
+<tr>
+<td>nvm install <version> [arch]</td>
+<td>安装制定版本的node 并且可以指定平台 version 版本号  arch 平台</td>
+</tr>
+<tr>
+<td>nvm list [available]</td>
+<td>查看版本</td>
+</tr>
+<tr>
+<td>nvm list</td>
+<td>查看已经安装的版本</td>
+</tr>
+<tr>
+<td>nvm list installed</td>
+<td>查看已经安装的版本</td>
+</tr>
+<tr>
+<td>nvm list available</td>
+<td>查看网络可以安装的版本</td>
+</tr>
+<tr>
+<td>nvm on</td>
+<td>打开nodejs版本控制</td>
+</tr>
+<tr>
+<td>nvm off</td>
+<td>关闭nodejs版本控制</td>
+</tr>
+<tr>
+<td>nvm proxy [url]</td>
+<td>查看和设置代理</td>
+</tr>
+<tr>
+<td>nvm node_mirror [url]</td>
+<td>设置或者查看setting.txt中的node_mirror，如果不设置的默认是 <a href="https://nodejs.org/dist/" target="_blank" rel="noopener">https://nodejs.org/dist/</a></td>
+</tr>
+<tr>
+<td>nvm npm_mirror [url]</td>
+<td>设置或者查看setting.txt中的npm_mirror,如果不设置的话默认的是：<a href="https://github.com/npm/npm/archive/" target="_blank" rel="noopener">https://github.com/npm/npm/archive/</a>.</td>
+</tr>
+<tr>
+<td>nvm uninstall <version></td>
+<td>卸载制定的版本</td>
+</tr>
+<tr>
+<td>nvm use [version] [arch]</td>
+<td>切换制定的node版本和位数</td>
+</tr>
+<tr>
+<td>nvm root [path]</td>
+<td>设置和查看root路径</td>
+</tr>
+</tbody></table>
+<h2 id="安装制定的nodejs"><a href="#安装制定的nodejs" class="headerlink" title="安装制定的nodejs"></a>安装制定的nodejs</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nvm install 8.0.0 64-bit    #安装node 8.0.0 64-bit的版本</span><br><span class="line">nvm use 8.0.0               #使用node8.0.0的版本</span><br><span class="line">node -v                     # 查看版本切换是否成功</span><br><span class="line">nvm list                    #查看以己经安装的</span><br></pre></td></tr></table></figure>
+
+
+]]></content>
       <categories>
-        <category>服务端</category>
-        <category>php</category>
+        <category>前端</category>
+        <category>node</category>
       </categories>
       <tags>
-        <tag>php</tag>
+        <tag>node</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>node</title>
+    <url>/posts/2239752261.html</url>
+    <content><![CDATA[<h1 id="nvm简单使用"><a href="#nvm简单使用" class="headerlink" title="nvm简单使用"></a>nvm简单使用</h1><blockquote>
+<p>npm 从5.2版开始，增加了 npx 命令,直接使用 npx 命令<br>查看 npx -v ，没有信息就全局安装<br>npm install -g npx # 全局安装<br>npx 作用就是指在项目内调用模块<br>npx 避免全局安装的模块</p>
+</blockquote>
+<p><a href="http://www.ruanyifeng.com/blog/2019/02/npx.html" target="_blank" rel="noopener">更多信息查看</a></p>
+<a id="more"></a>
+
+<h1 id="node安装常见错误"><a href="#node安装常见错误" class="headerlink" title="node安装常见错误"></a>node安装常见错误</h1><ol>
+<li>包安装没权限 （管理员身份运行cmd.exe）</li>
+<li>有时候要注意包的版本问题</li>
+</ol>
+<p><a href="https://blog.csdn.net/qq_39629050/article/details/80863319" target="_blank" rel="noopener">解决方法</a></p>
+]]></content>
+      <categories>
+        <category>前端</category>
+        <category>node</category>
+      </categories>
+      <tags>
+        <tag>node</tag>
       </tags>
   </entry>
   <entry>
@@ -720,58 +826,18 @@ WantedBy=multi-user.target</code></pre>]]></content>
       </tags>
   </entry>
   <entry>
-    <title>snow</title>
-    <url>/posts/914597299.html</url>
-    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <div class="hbe-input-container">
-  <input type="password" id="hbePass" placeholder="" />
-    <label for="hbePass">输入密码，查看文章</label>
-    <div class="bottom-line"></div>
-  </div>
-  <script id="hbeData" type="hbeData" data-hmacdigest="37d07ae0d22214035449612df8f71dc4eff19211a6c1fbaf6606264fc4790df2">eeb8ea072df15d23c8012e9e276ada2080edd847b600a636fba09a66100a2b772ea4df13da00216321da0fbd3b8bae7e834511154f8ff15f86e13dd810fd999544c66ee0913fbb432bace5d58b8433b8176e1eb7a3d90f99ed56529a9b5b5aed31631b8dc5792d7c961c620a4e376530</script>
-</div>
-<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-      <tags>
-        <tag>个人</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>vue-cli2</title>
-    <url>/posts/3297977961.html</url>
-    <content><![CDATA[<h2 id="vue-cli2和vue-cli3的使用和区别"><a href="#vue-cli2和vue-cli3的使用和区别" class="headerlink" title="vue-cli2和vue-cli3的使用和区别"></a>vue-cli2和vue-cli3的使用和区别</h2><pre><code>基础知识准备  node，npm</code></pre><h2 id="vue-cli脚手架的基础使用"><a href="#vue-cli脚手架的基础使用" class="headerlink" title="vue-cli脚手架的基础使用"></a>vue-cli脚手架的基础使用</h2><ol>
-<li>查看脚手架全局是否安装（全局安装更是为了方便初始化,创建新项目）<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$  vue -V   <span class="comment"># 大写的V </span></span><br><span class="line">            <span class="comment"># 2.X的就输出版本号    例如  2.9.6</span></span><br><span class="line">            <span class="comment"># 3.X or 4.0输出      例如  @vue/cli 4.x.x</span></span><br></pre></td></tr></table></figure></li>
-<li>安装与删除vue-cli<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g vue-cli      <span class="comment">#全局安装vue-cli2</span></span><br><span class="line">npm install -g @vue/cli     <span class="comment">#全局安装vue-cli3</span></span><br><span class="line">npm uninstall -g vue-cli    <span class="comment">#全局移除vue-cli2</span></span><br><span class="line">npm uninstall -g @vue/cli   <span class="comment">#全局移除vue-cli3</span></span><br><span class="line"></span><br><span class="line">npm install --save vue-cli  <span class="comment">#也可局部安装vue-cli2</span></span><br></pre></td></tr></table></figure></li>
-<li>初始化项目<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vue init webpack my-project     <span class="comment">#Vue CLI2 初始化项目</span></span><br><span class="line">vue create my-project           <span class="comment">#Vue CLI3 初始化项目</span></span><br></pre></td></tr></table></figure></li>
-<li>启动项目（可自己配置启动命令）   <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm run dev     <span class="comment">#2.X启动</span></span><br><span class="line">npm run server  <span class="comment">#3.X启动</span></span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><pre><code>1. 3.x 需要自己手动去写一些配置文件</code></pre><h6 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h6><p><a href="https://www.jianshu.com/p/fa9f80e56144" target="_blank" rel="noopener">链接1</a> &ensp;<a href="https://blog.csdn.net/qq_37818095/article/details/82351479" target="_blank" rel="noopener">链接2</a> &ensp; <a href="https://www.cnblogs.com/JCDXH/p/11703199.html" target="_blank" rel="noopener">链接3</a></p>
-]]></content>
+    <title>php fpm</title>
+    <url>/posts/3224789851.html</url>
+    <content><![CDATA[<h1 id="fpm进程池"><a href="#fpm进程池" class="headerlink" title="fpm进程池"></a>fpm进程池</h1><pre><code>摘录：
+    php-fpm ：php 是作为一个独立服务存在的，这个服务叫做 php-fpm
+    php-fpm pool ： php-fpm进程池，这个进程池中运行了多个子进程，用来并发处理所有连接的动态请求
+    配置多个pool：apache或者Nginx接收到php动态请求，传给php-fpm处理，然后调用pool中的子进程处理动态请求</code></pre><h1 id="配置文件地址（假设你的是inux系统）"><a href="#配置文件地址（假设你的是inux系统）" class="headerlink" title="配置文件地址（假设你的是inux系统）"></a>配置文件地址（假设你的是inux系统）</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cat &#x2F;usr&#x2F;local&#x2F;php&#x2F;etc&#x2F;php-fpm.conf         #查看配置目录</span><br><span class="line">cd &#x2F;usr&#x2F;local&#x2F;php&#x2F;etc&#x2F;php-fpm.d             #进入拓展配置目录</span><br><span class="line">cd &#x2F;usr&#x2F;local&#x2F;php&#x2F;etc&#x2F;php-fpm.d             #进入拓展配置目录</span><br><span class="line">cat &#x2F;usr&#x2F;local&#x2F;php&#x2F;etc&#x2F;php-fpm.d&#x2F;www.conf   #查看拓展配置文件</span><br><span class="line">    可以配置用户组、用户名,多个子进程</span><br><span class="line"></span><br><span class="line">&#x2F;usr&#x2F;local&#x2F;php&#x2F;sbin&#x2F;php-fpm                 #启动fpm进程,报错后,可以修改配置</span><br><span class="line">ps aux|grep php-fpm                         #查看fpm进程</span><br><span class="line">netstat -antup | grep php-fpm               #查看端口PID,kill PID 进程,再重启</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
-        <category>前端</category>
-        <category>vue</category>
+        <category>服务端</category>
+        <category>php</category>
       </categories>
       <tags>
-        <tag>前端</tag>
-        <tag>vue</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>vue 数据监测</title>
-    <url>/posts/533985533.html</url>
-    <content><![CDATA[<h1 id="vue-数据双向绑定"><a href="#vue-数据双向绑定" class="headerlink" title="vue 数据双向绑定"></a>vue 数据双向绑定</h1><p><a href="/posts/1988130116.html">可对比angular的脏检查</a></p>
-<pre><code>Object.defineProperty 实现数据变动侦测</code></pre><p>region { 这是折叠区标题的头<br>这是折叠区中的文本<br>这还是折叠区中的文本<br>} region 这是折叠区标题的尾</p>
-<p>｜       标题       ｜<br>｜==================｜<br>｜ 表头1  ｜ 表头2  ｜<br>｜:——-｜:——-｜<br>｜单元格1 ｜单元格2 ｜</p>
-<p><a href="/">链接文字</a></p>
-]]></content>
-      <categories>
-        <category>前端</category>
-        <category>vue</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>vue</tag>
+        <tag>php</tag>
       </tags>
   </entry>
   <entry>
@@ -820,6 +886,79 @@ WantedBy=multi-user.target</code></pre>]]></content>
       <tags>
         <tag>git</tag>
         <tag>php</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>snow</title>
+    <url>/posts/914597299.html</url>
+    <content><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <div class="hbe-input-container">
+  <input type="password" id="hbePass" placeholder="" />
+    <label for="hbePass">输入密码，查看文章</label>
+    <div class="bottom-line"></div>
+  </div>
+  <script id="hbeData" type="hbeData" data-hmacdigest="37d07ae0d22214035449612df8f71dc4eff19211a6c1fbaf6606264fc4790df2">eeb8ea072df15d23c8012e9e276ada2080edd847b600a636fba09a66100a2b772ea4df13da00216321da0fbd3b8bae7e834511154f8ff15f86e13dd810fd999544c66ee0913fbb432bace5d58b8433b8176e1eb7a3d90f99ed56529a9b5b5aed31631b8dc5792d7c961c620a4e376530</script>
+</div>
+<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      <tags>
+        <tag>个人</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vue vueCli4</title>
+    <url>/posts/1519428015.html</url>
+    <content><![CDATA[<h1 id="关于vue-cli4搭建基本操作"><a href="#关于vue-cli4搭建基本操作" class="headerlink" title="关于vue-cli4搭建基本操作"></a>关于vue-cli4搭建基本操作</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">vue -V                      #查看是否有全局安装脚手架</span><br><span class="line">npm install -g @vue&#x2F;cli     #全局安装vue-cli4</span><br><span class="line">vue create my-project       #初始化项目</span><br><span class="line">cd my-project               #进入项目目录</span><br><span class="line">npm run serve               #启动项目</span><br></pre></td></tr></table></figure>
+
+<h2 id="总结-cli4相比cli3"><a href="#总结-cli4相比cli3" class="headerlink" title="总结 cli4相比cli3"></a>总结 cli4相比cli3</h2><blockquote>
+<p>相同点 —— 根目录下都要手动创建 vue.config.js 文件<br>不同点，主要是router和store两个文件有点区<br>cli3 裸露的两个文件 store.js，跟router.js<br>vue-cli4更适合拓展模块，cli3的vuex在一个store.js文件中，代码过多，显的臃肿<br>现在文件目录结构清晰，更方便后面的模块拓展</p>
+</blockquote>
+<h1 id="官方参考（多阅读官方手册）"><a href="#官方参考（多阅读官方手册）" class="headerlink" title="官方参考（多阅读官方手册）"></a>官方参考（多阅读官方手册）</h1><pre><code>[cli参见官网][1]         [cli全局配置][2]</code></pre>]]></content>
+      <categories>
+        <category>前端</category>
+        <category>vue</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vue-cli2</title>
+    <url>/posts/3297977961.html</url>
+    <content><![CDATA[<h2 id="vue-cli2和vue-cli3的使用和区别"><a href="#vue-cli2和vue-cli3的使用和区别" class="headerlink" title="vue-cli2和vue-cli3的使用和区别"></a>vue-cli2和vue-cli3的使用和区别</h2><pre><code>基础知识准备  node，npm</code></pre><h2 id="vue-cli脚手架的基础使用"><a href="#vue-cli脚手架的基础使用" class="headerlink" title="vue-cli脚手架的基础使用"></a>vue-cli脚手架的基础使用</h2><ol>
+<li>查看脚手架全局是否安装（全局安装更是为了方便初始化,创建新项目）<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$  vue -V   <span class="comment"># 大写的V </span></span><br><span class="line">            <span class="comment"># 2.X的就输出版本号    例如  2.9.6</span></span><br><span class="line">            <span class="comment"># 3.X or 4.0输出      例如  @vue/cli 4.x.x</span></span><br></pre></td></tr></table></figure></li>
+<li>安装与删除vue-cli<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g vue-cli      <span class="comment">#全局安装vue-cli2</span></span><br><span class="line">npm install -g @vue/cli     <span class="comment">#全局安装vue-cli3</span></span><br><span class="line">npm uninstall -g vue-cli    <span class="comment">#全局移除vue-cli2</span></span><br><span class="line">npm uninstall -g @vue/cli   <span class="comment">#全局移除vue-cli3</span></span><br><span class="line"></span><br><span class="line">npm install --save vue-cli  <span class="comment">#也可局部安装vue-cli2</span></span><br></pre></td></tr></table></figure></li>
+<li>初始化项目<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vue init webpack my-project     <span class="comment">#Vue CLI2 初始化项目</span></span><br><span class="line">vue create my-project           <span class="comment">#Vue CLI3 初始化项目</span></span><br></pre></td></tr></table></figure></li>
+<li>启动项目（可自己配置启动命令）   <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm run dev     <span class="comment">#2.X启动</span></span><br><span class="line">npm run serve   <span class="comment">#3.X启动</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><pre><code>1. 3.x 需要自己手动去写一些配置文件</code></pre><h6 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h6><p><a href="https://www.jianshu.com/p/fa9f80e56144" target="_blank" rel="noopener">链接1</a> &ensp;<a href="https://blog.csdn.net/qq_37818095/article/details/82351479" target="_blank" rel="noopener">链接2</a> &ensp; <a href="https://www.cnblogs.com/JCDXH/p/11703199.html" target="_blank" rel="noopener">链接3</a></p>
+]]></content>
+      <categories>
+        <category>前端</category>
+        <category>vue</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vue 数据监测</title>
+    <url>/posts/533985533.html</url>
+    <content><![CDATA[<h1 id="vue-数据双向绑定"><a href="#vue-数据双向绑定" class="headerlink" title="vue 数据双向绑定"></a>vue 数据双向绑定</h1><p><a href="/posts/1988130116.html">可对比angular的脏检查</a></p>
+<pre><code>Object.defineProperty 实现数据变动侦测</code></pre><p>region { 这是折叠区标题的头<br>这是折叠区中的文本<br>这还是折叠区中的文本<br>} region 这是折叠区标题的尾</p>
+<p>｜       标题       ｜<br>｜==================｜<br>｜ 表头1  ｜ 表头2  ｜<br>｜:——-｜:——-｜<br>｜单元格1 ｜单元格2 ｜</p>
+<p><a href="/">链接文字</a></p>
+]]></content>
+      <categories>
+        <category>前端</category>
+        <category>vue</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>vue</tag>
       </tags>
   </entry>
 </search>

@@ -6,15 +6,103 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://snow008.github.io/"/>
-  <updated>2020-05-13T02:49:26.261Z</updated>
+  <updated>2020-05-19T14:43:38.046Z</updated>
   <id>https://snow008.github.io/</id>
   
   <author>
-    <name>天使的梦</name>
+    <name>混世魔王</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue vueCli4</title>
+    <link href="https://snow008.github.io/posts/1519428015.html"/>
+    <id>https://snow008.github.io/posts/1519428015.html</id>
+    <published>2020-05-19T02:14:15.000Z</published>
+    <updated>2020-05-19T14:43:38.046Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="关于vue-cli4搭建基本操作"><a href="#关于vue-cli4搭建基本操作" class="headerlink" title="关于vue-cli4搭建基本操作"></a>关于vue-cli4搭建基本操作</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">vue -V                      #查看是否有全局安装脚手架</span><br><span class="line">npm install -g @vue&#x2F;cli     #全局安装vue-cli4</span><br><span class="line">vue create my-project       #初始化项目</span><br><span class="line">cd my-project               #进入项目目录</span><br><span class="line">npm run serve               #启动项目</span><br></pre></td></tr></table></figure><h2 id="总结-cli4相比cli3"><a href="#总结-cli4相比cli3" class="headerlink" title="总结 cli4相比cli3"></a>总结 cli4相比cli3</h2><blockquote><p>相同点 —— 根目录下都要手动创建 vue.config.js 文件<br>不同点，主要是router和store两个文件有点区<br>cli3 裸露的两个文件 store.js，跟router.js<br>vue-cli4更适合拓展模块，cli3的vuex在一个store.js文件中，代码过多，显的臃肿<br>现在文件目录结构清晰，更方便后面的模块拓展</p></blockquote><h1 id="官方参考（多阅读官方手册）"><a href="#官方参考（多阅读官方手册）" class="headerlink" title="官方参考（多阅读官方手册）"></a>官方参考（多阅读官方手册）</h1><pre><code>[cli参见官网][1]         [cli全局配置][2]</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;关于vue-cli4搭建基本操作&quot;&gt;&lt;a href=&quot;#关于vue-cli4搭建基本操作&quot; class=&quot;headerlink&quot; title=&quot;关于vue-cli4搭建基本操作&quot;&gt;&lt;/a&gt;关于vue-cli4搭建基本操作&lt;/h1&gt;&lt;figure class=&quot;hi
+      
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://snow008.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="vue" scheme="https://snow008.github.io/categories/%E5%89%8D%E7%AB%AF/vue/"/>
+    
+    
+      <category term="前端" scheme="https://snow008.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="vue" scheme="https://snow008.github.io/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>node</title>
+    <link href="https://snow008.github.io/posts/2239752261.html"/>
+    <id>https://snow008.github.io/posts/2239752261.html</id>
+    <published>2020-05-14T14:10:50.000Z</published>
+    <updated>2020-05-15T05:53:49.529Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="nvm简单使用"><a href="#nvm简单使用" class="headerlink" title="nvm简单使用"></a>nvm简单使用</h1><blockquote><p>npm 从5.2版开始，增加了 npx 命令,直接使用 npx 命令<br>查看 npx -v ，没有信息就全局安装<br>npm install -g npx # 全局安装<br>npx 作用就是指在项目内调用模块<br>npx 避免全局安装的模块</p></blockquote><p><a href="http://www.ruanyifeng.com/blog/2019/02/npx.html" target="_blank" rel="noopener">更多信息查看</a></p><a id="more"></a><h1 id="node安装常见错误"><a href="#node安装常见错误" class="headerlink" title="node安装常见错误"></a>node安装常见错误</h1><ol><li>包安装没权限 （管理员身份运行cmd.exe）</li><li>有时候要注意包的版本问题</li></ol><p><a href="https://blog.csdn.net/qq_39629050/article/details/80863319" target="_blank" rel="noopener">解决方法</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;nvm简单使用&quot;&gt;&lt;a href=&quot;#nvm简单使用&quot; class=&quot;headerlink&quot; title=&quot;nvm简单使用&quot;&gt;&lt;/a&gt;nvm简单使用&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;npm 从5.2版开始，增加了 npx 命令,直接使用 npx 命令&lt;br&gt;查看 npx -v ，没有信息就全局安装&lt;br&gt;npm install -g npx # 全局安装&lt;br&gt;npx 作用就是指在项目内调用模块&lt;br&gt;npx 避免全局安装的模块&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.ruanyifeng.com/blog/2019/02/npx.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;更多信息查看&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://snow008.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="node" scheme="https://snow008.github.io/categories/%E5%89%8D%E7%AB%AF/node/"/>
+    
+    
+      <category term="node" scheme="https://snow008.github.io/tags/node/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>gulp</title>
+    <link href="https://snow008.github.io/posts/1287843722.html"/>
+    <id>https://snow008.github.io/posts/1287843722.html</id>
+    <published>2020-05-14T09:13:49.000Z</published>
+    <updated>2020-05-15T05:53:57.551Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="关于gulp-4-的同步，异步执行任务"><a href="#关于gulp-4-的同步，异步执行任务" class="headerlink" title="关于gulp 4.* 的同步，异步执行任务"></a>关于gulp 4.* 的同步，异步执行任务</h1><blockquote><p>series 方法会按照顺序执行，即同步执行<br>parallel 方法胡同时执行，并行执行<br>它们的参数一定是gulp的task活动，返回stream</p></blockquote><p><a href="https://www.gulpjs.com.cn/" target="_blank" rel="noopener">gulp官方</a></p><a id="more"></a><h1 id="压缩js，css，html文件（其他类同）"><a href="#压缩js，css，html文件（其他类同）" class="headerlink" title="压缩js，css，html文件（其他类同）"></a>压缩js，css，html文件（其他类同）</h1><h2 id="要打包的文件根目录创建-gulpfile-js，以下内容写入"><a href="#要打包的文件根目录创建-gulpfile-js，以下内容写入" class="headerlink" title="要打包的文件根目录创建 gulpfile.js，以下内容写入"></a>要打包的文件根目录创建 gulpfile.js，以下内容写入</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line">var gulp &#x3D; require(&#39;gulp&#39;);</span><br><span class="line">var minifycss &#x3D; require(&#39;gulp-minify-css&#39;);&#x2F;&#x2F;压缩css</span><br><span class="line">var uglify &#x3D; require(&#39;gulp-uglify&#39;);&#x2F;&#x2F;压缩js</span><br><span class="line">var concat &#x3D; require(&#39;gulp-concat&#39;); &#x2F;&#x2F;合并文件</span><br><span class="line">var htmlmin &#x3D; require(&#39;gulp-htmlmin&#39;);&#x2F;&#x2F;压缩html</span><br><span class="line">&#x2F;&#x2F; var htmlclean &#x3D; require(&#39;gulp-htmlclean&#39;); &#x2F;&#x2F;清空html文件</span><br><span class="line">var  plumber&#x3D;require(&#39;gulp-plumber&#39;); &#x2F;&#x2F;检测错误</span><br><span class="line">var gutil&#x3D;require(&#39;gulp-util&#39;);&#x2F;&#x2F;如果有自定义方法，会用到</span><br><span class="line">var processhtml &#x3D; require(&#39;gulp-processhtml&#39;);</span><br><span class="line">var Replace &#x3D; require(&#39;gulp-replace&#39;);&#x2F;&#x2F;文件名替换</span><br><span class="line">var clean &#x3D; require(&#39;gulp-clean&#39;); &#x2F;&#x2F;删除文件、文件夹的插件</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">var date &#x3D; new Date().getTime();</span><br><span class="line"></span><br><span class="line">gulp.task(&#39;clean&#39;,function()&#123;</span><br><span class="line">    return gulp.src(&#39;min&#x2F;**&#39;,&#123;read:false&#125;)</span><br><span class="line">        .pipe(clean());</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 控制台发声,错误时beep一下</span><br><span class="line">function errrHandler( e )&#123;  </span><br><span class="line">    gutil.beep();</span><br><span class="line">    gutil.log(e);</span><br><span class="line">    this.emit(&#39;end&#39;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;压缩css</span><br><span class="line">gulp.task(&#39;mincss&#39;, function ()&#123;</span><br><span class="line">    &#x2F;&#x2F; return gulp.src(&#39;css&#x2F;*.css&#39;)</span><br><span class="line">    return gulp.src([&#39;css&#x2F;b.css&#39;,&#39;css&#x2F;a.css&#39;])&#x2F;&#x2F;按顺序压缩，也可使用插件 gulp-order</span><br><span class="line">        .pipe(concat(&#39;all.css&#39;))&#x2F;&#x2F;合成到一个css</span><br><span class="line">        .pipe(gulp.dest(&#39;min&#x2F;&#39;))&#x2F;&#x2F;输出到css目录</span><br><span class="line">        .pipe(minifycss())&#x2F;&#x2F;压缩css到一样</span><br><span class="line">        .pipe(concat(&#39;all.min.css&#39;))&#x2F;&#x2F;压缩后的css</span><br><span class="line">        .pipe(gulp.dest(&#39;min&#x2F;&#39;));&#x2F;&#x2F;输出到css目录</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 压缩js文件</span><br><span class="line">gulp.task(&#39;minjs&#39;, function() &#123;</span><br><span class="line">    return gulp.src([&#39;.&#x2F;js&#x2F;**&#x2F;*.js&#39;])</span><br><span class="line">        .pipe(concat(&#39;all.js&#39;))</span><br><span class="line">        .pipe(uglify())</span><br><span class="line">        .pipe(gulp.dest(&#39;min&#39;));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 压缩html</span><br><span class="line">gulp.task(&#39;minhtml&#39;, function () &#123;</span><br><span class="line">    var options &#x3D; &#123;</span><br><span class="line">        removeComments: true,&#x2F;&#x2F;清除HTML注释</span><br><span class="line">        collapseWhitespace: true,&#x2F;&#x2F;压缩HTML</span><br><span class="line">        collapseBooleanAttributes: false,&#x2F;&#x2F;省略布尔属性的值 &lt;input checked&#x3D;&quot;true&quot;&#x2F;&gt; &#x3D;&#x3D;&gt; &lt;input &#x2F;&gt;</span><br><span class="line">        removeEmptyAttributes: false,&#x2F;&#x2F;删除所有空格作属性值 &lt;input id&#x3D;&quot;&quot; &#x2F;&gt; &#x3D;&#x3D;&gt; &lt;input &#x2F;&gt;</span><br><span class="line">        removeScriptTypeAttributes: true,&#x2F;&#x2F;删除&lt;script&gt;的type&#x3D;&quot;text&#x2F;javascript&quot;</span><br><span class="line">        removeStyleLinkTypeAttributes: true,&#x2F;&#x2F;删除&lt;style&gt;和&lt;link&gt;的type&#x3D;&quot;text&#x2F;css&quot;</span><br><span class="line">        minifyJS: true,&#x2F;&#x2F;压缩页面JS</span><br><span class="line">        minifyCSS: true&#x2F;&#x2F;压缩页面CSS</span><br><span class="line">    &#125;;</span><br><span class="line">    return gulp.src([&#39;.&#x2F;*.html&#39;])       </span><br><span class="line">        .pipe(plumber(&#123;errorHandler:errrHandler&#125;))     </span><br><span class="line">        .pipe(Replace(&#x2F;_VERSION_&#x2F;gi, date))</span><br><span class="line">        .pipe(processhtml())</span><br><span class="line">        .pipe(htmlmin(options))</span><br><span class="line">        .pipe(gulp.dest(&#39;min&#39;));</span><br><span class="line">&#125;);</span><br><span class="line">&#x2F;&#x2F; 生成目标html替换生成的html文件的js，css文件</span><br><span class="line"></span><br><span class="line">gulp.task(&#39;replacedev&#39;, function()&#123;</span><br><span class="line">    return gulp.src([&#39;min&#x2F;&#39;+&#39;*.html&#39;])</span><br><span class="line">        .pipe(Replace(&#39;common.js&#39;, &#39;all.js&#39;))</span><br><span class="line">        .pipe(Replace(&#39;common.css&#39;, &#39;all.css&#39;))</span><br><span class="line">        .pipe(gulp.dest(&#39;min&#x2F;&#39;));</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 默认任务 gulp 4.0 适用的方式</span><br><span class="line">gulp.task(&#39;default&#39;, gulp.series(&#39;clean&#39;,&#39;mincss&#39;,&#39;minjs&#39;,&#39;minhtml&#39;,&#39;replacedev&#39;));</span><br></pre></td></tr></table></figure><h2 id="运行gulp"><a href="#运行gulp" class="headerlink" title="运行gulp"></a>运行gulp</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gulp  #默认执行 gulp default</span><br></pre></td></tr></table></figure><h2 id="注意问题"><a href="#注意问题" class="headerlink" title="注意问题"></a>注意问题</h2><pre><code>1. task() 里面一定要写成返回值  return gulp.src（....）——返回值就符合steam2. 多个任务按顺序执行，使用 series() 方法 （很多错误原因是用parallel方法）</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;关于gulp-4-的同步，异步执行任务&quot;&gt;&lt;a href=&quot;#关于gulp-4-的同步，异步执行任务&quot; class=&quot;headerlink&quot; title=&quot;关于gulp 4.* 的同步，异步执行任务&quot;&gt;&lt;/a&gt;关于gulp 4.* 的同步，异步执行任务&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;series 方法会按照顺序执行，即同步执行&lt;br&gt;parallel 方法胡同时执行，并行执行&lt;br&gt;它们的参数一定是gulp的task活动，返回stream&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.gulpjs.com.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;gulp官方&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="https://snow008.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="gulp" scheme="https://snow008.github.io/categories/%E5%89%8D%E7%AB%AF/gulp/"/>
+    
+    
+      <category term="gulp" scheme="https://snow008.github.io/tags/gulp/"/>
+    
+      <category term="工具" scheme="https://snow008.github.io/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
   
   <entry>
     <title>linux httpd</title>
@@ -194,27 +282,6 @@
   </entry>
   
   <entry>
-    <title>Node</title>
-    <link href="https://snow008.github.io/posts/625821563.html"/>
-    <id>https://snow008.github.io/posts/625821563.html</id>
-    <published>2020-04-23T05:55:10.000Z</published>
-    <updated>2020-05-04T03:38:17.212Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-      <category term="前端" scheme="https://snow008.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-      <category term="Node" scheme="https://snow008.github.io/categories/%E5%89%8D%E7%AB%AF/Node/"/>
-    
-    
-      <category term="Node" scheme="https://snow008.github.io/tags/Node/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Jquery</title>
     <link href="https://snow008.github.io/posts/4255042143.html"/>
     <id>https://snow008.github.io/posts/4255042143.html</id>
@@ -278,11 +345,11 @@
   </entry>
   
   <entry>
-    <title>JS</title>
+    <title>js</title>
     <link href="https://snow008.github.io/posts/3106780478.html"/>
     <id>https://snow008.github.io/posts/3106780478.html</id>
     <published>2020-04-23T05:48:12.000Z</published>
-    <updated>2020-04-23T05:53:31.386Z</updated>
+    <updated>2020-05-15T03:37:43.124Z</updated>
     
     <summary type="html">
     
@@ -291,10 +358,10 @@
     
       <category term="前端" scheme="https://snow008.github.io/categories/%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="JS" scheme="https://snow008.github.io/categories/%E5%89%8D%E7%AB%AF/JS/"/>
+      <category term="js" scheme="https://snow008.github.io/categories/%E5%89%8D%E7%AB%AF/js/"/>
     
     
-      <category term="JS" scheme="https://snow008.github.io/tags/JS/"/>
+      <category term="js" scheme="https://snow008.github.io/tags/js/"/>
     
   </entry>
   
@@ -499,66 +566,6 @@
     
     
       <category term="hexo" scheme="https://snow008.github.io/tags/hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>linux install git</title>
-    <link href="https://snow008.github.io/posts/3337199416.html"/>
-    <id>https://snow008.github.io/posts/3337199416.html</id>
-    <published>2019-06-28T11:42:02.000Z</published>
-    <updated>2020-05-05T10:47:32.045Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="在centOS7源码安装git"><a href="#在centOS7源码安装git" class="headerlink" title="在centOS7源码安装git"></a>在centOS7源码安装git</h2><pre><code>摘录：不使用 yum install git,这样安装的git版本低1. 先查看是否安装,使用命令 git --version2. 有就先删除,执行命令 yum remove git3. 再执行源码安装</code></pre><h2 id="源码安装步骤"><a href="#源码安装步骤" class="headerlink" title="源码安装步骤"></a>源码安装步骤</h2><ol><li>先下载源码文件,并且解压到指定文件(我安装版本是2.11.1,安装到/usr/local/git-2.11.1)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">cd      #进入到根目录即 &#x2F;root</span><br><span class="line">wget https:&#x2F;&#x2F;www.kernel.org&#x2F;pub&#x2F;software&#x2F;scm&#x2F;git&#x2F;git-2.11.1.tar.gz  #使用wget命令下载</span><br><span class="line">tar -xzvf  &#x2F;root&#x2F;git-2.19.2.tar.gz -C &#x2F;usr&#x2F;local    #将压缩包解压到指定目录</span><br><span class="line">cd &#x2F;usr&#x2F;local&#x2F;git-2.11.1    #进入解压的git目录</span><br><span class="line">开始配置git</span><br><span class="line">.&#x2F;configure --prefix&#x3D;&#x2F;usr&#x2F;local&#x2F;git-2.11.1 --with-iconv --with-curl --with-expat&#x3D;&#x2F;usr&#x2F;local&#x2F;lib     #开始配置</span><br><span class="line">make &amp;&amp; make install            #编译再安装</span><br></pre></td></tr></table></figure></li></ol><h2 id="安装可能会出现的问题"><a href="#安装可能会出现的问题" class="headerlink" title="安装可能会出现的问题"></a>安装可能会出现的问题</h2><ol><li>运行 git –version出现错误<br> <img data-src="/img/centos-git1.png" alt="linux安装源码git"><ul><li>解决方法： 在linux中，/etc/profile文件中添加git环境变量</li><li>添加git环境变量添加到 /etc/profile（前提是你的git安装目录就在 /usr/git）<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;export PATH&#x3D;$PATH:&#x2F;usr&#x2F;local&#x2F;git-2.11.1&#x2F;bin&quot; &gt;&gt; &#x2F;etc&#x2F;profile</span><br><span class="line">source &#x2F;etc&#x2F;profile   #使修改的文件生效</span><br></pre></td></tr></table></figure></li></ul></li><li>运行git clone或者git push 出现错误 fatal: Unable to find remote helper for ‘https’<br> <img data-src="/img/centos-git2.png" alt="linux安装源码git"><ul><li>解决方法： 添加 git-remote-https（可查看/usr/local/git-2.11.1/libexec/git-core 目录下缺少 git-remote-https）</li><li>安装依赖，并且编译后安装到git-2.11.1目录下<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel</span><br><span class="line">make prefix&#x3D;&#x2F;usr&#x2F;local&#x2F;git-2.11.1 with-curl&#x3D;&#x2F;usr&#x2F;include&#x2F;curl&#x2F; all</span><br><span class="line">make prefix&#x3D;&#x2F;usr&#x2F;local&#x2F;git-2.11.1 install</span><br></pre></td></tr></table></figure></li><li>将 /usr/local/git-2.11.1/libexec/git-core 写入环境变量PATH<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;export PATH&#x3D;$PATH:&#x2F;usr&#x2F;local&#x2F;git-2.11.1&#x2F;libexec&#x2F;git-core&quot; &gt;&gt; &#x2F;etc&#x2F;profile</span><br><span class="line">source &#x2F;etc&#x2F;profile  #使修改的文件生效</span><br></pre></td></tr></table></figure></li></ul></li></ol><h2 id="注意：进行环境变量的编辑"><a href="#注意：进行环境变量的编辑" class="headerlink" title="注意：进行环境变量的编辑"></a>注意：进行环境变量的编辑</h2><pre><code>    1. 修改 /root/.bashrc文件,只对当前用户有用    2. 修改 /etc/profile文件,对所有用户有用&apos;./configure --prefix=/ &apos; 的作用是：编译的时候用来指定程序存放路径不指定地址,可执行文件默认放在/usr/local/bin库文度件默认放在/usr/local/lib配置文件默认放在/usr/local/etc其它的资源文件放在/usr/local/share</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;在centOS7源码安装git&quot;&gt;&lt;a href=&quot;#在centOS7源码安装git&quot; class=&quot;headerlink&quot; title=&quot;在centOS7源码安装git&quot;&gt;&lt;/a&gt;在centOS7源码安装git&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;摘录：不使用 yum
-      
-    
-    </summary>
-    
-    
-      <category term="服务端" scheme="https://snow008.github.io/categories/%E6%9C%8D%E5%8A%A1%E7%AB%AF/"/>
-    
-      <category term="linux" scheme="https://snow008.github.io/categories/%E6%9C%8D%E5%8A%A1%E7%AB%AF/linux/"/>
-    
-    
-      <category term="linux" scheme="https://snow008.github.io/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>centOS下基于LAMP环境，使用gitee的webhook完成自动部署</title>
-    <link href="https://snow008.github.io/posts/3529366497.html"/>
-    <id>https://snow008.github.io/posts/3529366497.html</id>
-    <published>2019-05-01T04:12:44.000Z</published>
-    <updated>2019-05-02T11:54:23.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="webhook是做什么的？"><a href="#webhook是做什么的？" class="headerlink" title="webhook是做什么的？"></a>webhook是做什么的？</h2><pre><code>当你使用gitee提交项目，利用gitee提供的webhook钩子,触发钩子执行脚本,将gitee项目克隆或者更新到自己的线上地址</code></pre><h2 id="centOS下基于LAMP环境，使用gitee的webhook完成自动部署"><a href="#centOS下基于LAMP环境，使用gitee的webhook完成自动部署" class="headerlink" title="centOS下基于LAMP环境，使用gitee的webhook完成自动部署"></a>centOS下基于LAMP环境，使用gitee的webhook完成自动部署</h2><pre><code>必备知识：    1. 线上搭建LAMP环境    2. git知识    3. linux基础    4. php基础</code></pre><a id="more"></a><h2 id="大致流程（网上有很多参考-可自行搜索）"><a href="#大致流程（网上有很多参考-可自行搜索）" class="headerlink" title="大致流程（网上有很多参考,可自行搜索）"></a>大致流程（网上有很多参考,可自行搜索）</h2><ol><li>首先在gitee上创建一个项目（可以搜索到）</li><li>登录gitee上的该项目,找到该项目的  [管理]<br><img data-src="/img/webhook1.png" alt="webhook1"></li><li>点击webhook按钮,添加当前项目的webhook（添加的地址一定是可以直接访问,可不设置密码）<br><img data-src="/img/webhook2.png" alt="webhook2"></li><li>在线上创建push.php(push是自定义文件名字)</li><li>写入代码<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">    &#x2F;&#x2F;测试当前脚本能否正常启动,可以解开注释</span><br><span class="line">    &#x2F;&#x2F; $output &#x3D; shell_exec(&#39;ls -lart&#39;);</span><br><span class="line">    &#x2F;&#x2F; echo &quot;&lt;pre&gt;$output&lt;&#x2F;pre&gt;&quot;;</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F;git webhook 自动部署脚本</span><br><span class="line">    &#x2F;&#x2F;项目存放物理路径,第一次clone时,必须保证该目录为空</span><br><span class="line">    $savePath &#x3D; &quot;&#x2F;var&#x2F;www&#x2F;webhook&#x2F;&quot;;    &#x2F;&#x2F;下载到指定目录</span><br><span class="line">    $gitPath  &#x3D; &quot;https:&#x2F;&#x2F;gitee.com&#x2F;yourname&#x2F;hook.git&quot;;&#x2F;&#x2F;代码仓库</span><br><span class="line">    $email &#x3D; &quot;12345678@qq.com&quot;;&#x2F;&#x2F;用户仓库邮箱</span><br><span class="line">    $name  &#x3D; &quot;12345678@qq.com&quot;;&#x2F;&#x2F;仓库用户名,一般和邮箱一致即可</span><br><span class="line"></span><br><span class="line">    $isClone &#x3D; true;&#x2F;&#x2F;设置是否已经Clone到本地,true:已经clone,直接pull,false:先clone.</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F;如果已经clone过,则直接拉去代码</span><br><span class="line">    if ($isClone) &#123;</span><br><span class="line">        $requestBody &#x3D; file_get_contents(&quot;php:&#x2F;&#x2F;input&quot;);</span><br><span class="line">        if (empty($requestBody)) &#123;</span><br><span class="line">            die(&#39;send fail&#39;);</span><br><span class="line">        &#125;</span><br><span class="line">        &#x2F;&#x2F;将Git服务器发出的数据转化为JSON信息</span><br><span class="line">        $content &#x3D; json_decode($requestBody, true);</span><br><span class="line">        &#x2F;&#x2F;多加几个条件判断</span><br><span class="line">        if ($content[&#39;ref&#39;]&#x3D;&#x3D;&#39;refs&#x2F;heads&#x2F;master&#39; &amp;&amp; $content[&#39;total_commits_count&#39;]&gt;0) &#123;</span><br><span class="line">            $res &#x3D; PHP_EOL.&quot;pull 开始 --------&quot;.PHP_EOL;</span><br><span class="line">            $res .&#x3D; shell_exec(&quot;cd &#123;$savePath&#125; &amp;&amp; sudo &#x2F;usr&#x2F;local&#x2F;git-2.11.1&#x2F;bin&#x2F;git pull&quot;);&#x2F;&#x2F;拉去代码</span><br><span class="line">            $res_log &#x3D; &#39;-------------------------&#39;.PHP_EOL;</span><br><span class="line">            $res_log .&#x3D; $content[&#39;user_name&#39;] . &#39; 在&#39; . date(&#39;Y-m-d H:i:s&#39;) . &#39;向&#39; . $content[&#39;repository&#39;][&#39;name&#39;] . &#39;项目的&#39; . $content[&#39;ref&#39;] . &#39;分支push了&#39; . $content[&#39;total_commits_count&#39;] . &#39;个commit：&#39;;</span><br><span class="line">            $res_log .&#x3D; $res.PHP_EOL;</span><br><span class="line">            $res_log .&#x3D; &quot;pull 结束 --------&quot;.PHP_EOL;</span><br><span class="line">            file_put_contents(&quot;webhook_log.txt&quot;, $res_log, FILE_APPEND);&#x2F;&#x2F;写入日志到log文件中</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;else &#123;</span><br><span class="line">        $res &#x3D; &quot;clone 开始 --------&quot;.PHP_EOL;</span><br><span class="line">        $res .&#x3D; shell_exec(&quot;sudo &#x2F;usr&#x2F;local&#x2F;git-2.11.1&#x2F;bin&#x2F;git clone &#123;$gitPath&#125; &#123;$savePath&#125;&quot;).PHP_EOL;&#x2F;&#x2F;执行脚本，clone到指定目录</span><br><span class="line">        $res .&#x3D; &quot;clone 结束 --------&quot;.PHP_EOL;</span><br><span class="line">        file_put_contents(&quot;webhook_log.txt&quot;, $res, FILE_APPEND);&#x2F;&#x2F;写入日志到log文件中</span><br><span class="line">    &#125;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure></li></ol><h2 id="基于git的webhook部署可能会出现的问题"><a href="#基于git的webhook部署可能会出现的问题" class="headerlink" title="基于git的webhook部署可能会出现的问题"></a>基于git的webhook部署可能会出现的问题</h2><ol><li><p>线上安装并且配置好git（推荐源码安装git——我的安装在 /var/local/git-2.11.1）</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;天使&quot;              #配置用户名</span><br><span class="line">git config --global user.email &quot;1234567@qq.com&quot;   #配置邮箱</span><br><span class="line">git config --global credential.helper store       #下次git操作不用密码验证</span><br><span class="line">#假设你已经配置好了秘钥</span><br></pre></td></tr></table></figure></li><li><p>文件权限问题（线上操作是root用户,而php执行的push.php是用户——用户组都是www）</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chown -R www:www &#x2F;var&#x2F;www   #将目录  &#x2F;var&#x2F;www 权限给 www用户组的用户www </span><br><span class="line">chmod 777 &#x2F;var&#x2F;www          #给 目录&#x2F;var&#x2F;www  最高权限</span><br></pre></td></tr></table></figure></li><li><p>php-fpm配置（我的php安装目录就在 /usr/local/php）——配置</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;usr&#x2F;local&#x2F;php&#x2F;sbin&#x2F;php-fpm #启动php-fpm,如果报错，可以找到对应办法</span><br><span class="line">netstat -antup | grep php   #当端口被占用，找到php-fpm的pid，关掉 执行 kill pid</span><br><span class="line">ps -ef | grep php           #查看php用户进程——全部配置为所有者是www</span><br><span class="line">ps -ef | grep php-fpm       #查看php-fpm进程——全部配置为所有者是www</span><br><span class="line"></span><br><span class="line">cd &#x2F;usr&#x2F;local&#x2F;apache2&#x2F;logs  #进入apache的日志目录</span><br><span class="line">cat error_log               #查看错误日志,调试使用 </span><br><span class="line">cd &#x2F;usr&#x2F;local&#x2F;php&#x2F;etc&#x2F;php-fpm.d #进入配置目录</span><br><span class="line">cp www.conf.default www.conf    #复制出www.conf文件,里面配置用户跟用户组,如下图</span><br></pre></td></tr></table></figure><p><img data-src="/img/webhook4.png" alt="webhook4"></p></li><li><p>报错’This account is currently not available’<br>解决：把www用户的配置修改一下，让他的登录shell变成/bin/bash<br>git拉取完项目后再把www用户的nologin选项恢复回去</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chmod 777 &#x2F;etc&#x2F;passwd       #给passwd文件最高操作权限——一定是在root用户下，才可以编辑修改</span><br><span class="line">chmod 440 &#x2F;etc&#x2F;passwd   #恢复只读权限</span><br></pre></td></tr></table></figure><p><img data-src="/img/webhook5.png" alt="webhook5"> </p></li><li><p>www用户没有免密码设置，因为我的php脚本用户设置的就是www<br><img data-src="/img/webhook3.png" alt="webhook3"><br> 解决：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">chmod 777 &#x2F;etc&#x2F;sudoers  #给最高权限</span><br><span class="line">chmod 440 &#x2F;etc&#x2F;sudoers  #还原只读权限</span><br><span class="line">sudo visudo             #或者直接运行这个，修改配置</span><br><span class="line">进入后，添加</span><br><span class="line">www     ALL&#x3D;NOPASSWD: &#x2F;usr&#x2F;local&#x2F;git-2.11.1&#x2F;bin&#x2F;git     #这是地址是我的git执行位置</span><br><span class="line">www     ALL&#x3D;(ALL:ALL)  NOPASSWD:ALL     #也可添加这种方式</span><br></pre></td></tr></table></figure></li></ol><p>还有webhook部署问题,需要交流学习,请联系邮箱<a href="mailto:897113156@qq.com">snow_007@foxmail.com</a></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;webhook是做什么的？&quot;&gt;&lt;a href=&quot;#webhook是做什么的？&quot; class=&quot;headerlink&quot; title=&quot;webhook是做什么的？&quot;&gt;&lt;/a&gt;webhook是做什么的？&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;当你使用gitee提交项目，利用gitee提供的webhook钩子,触发钩子执行脚本,
-将gitee项目克隆或者更新到自己的线上地址&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;centOS下基于LAMP环境，使用gitee的webhook完成自动部署&quot;&gt;&lt;a href=&quot;#centOS下基于LAMP环境，使用gitee的webhook完成自动部署&quot; class=&quot;headerlink&quot; title=&quot;centOS下基于LAMP环境，使用gitee的webhook完成自动部署&quot;&gt;&lt;/a&gt;centOS下基于LAMP环境，使用gitee的webhook完成自动部署&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;必备知识：
-    1. 线上搭建LAMP环境
-    2. git知识
-    3. linux基础
-    4. php基础&lt;/code&gt;&lt;/pre&gt;
-    
-    </summary>
-    
-    
-      <category term="服务端" scheme="https://snow008.github.io/categories/%E6%9C%8D%E5%8A%A1%E7%AB%AF/"/>
-    
-      <category term="php" scheme="https://snow008.github.io/categories/%E6%9C%8D%E5%8A%A1%E7%AB%AF/php/"/>
-    
-    
-      <category term="git" scheme="https://snow008.github.io/tags/git/"/>
-    
-      <category term="php" scheme="https://snow008.github.io/tags/php/"/>
     
   </entry>
   
