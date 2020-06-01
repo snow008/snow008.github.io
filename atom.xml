@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://snow008.github.io/"/>
-  <updated>2020-06-01T08:03:35.935Z</updated>
+  <updated>2020-06-01T08:26:24.426Z</updated>
   <id>https://snow008.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://snow008.github.io/posts/3631490217.html"/>
     <id>https://snow008.github.io/posts/3631490217.html</id>
     <published>2020-05-22T14:01:01.000Z</published>
-    <updated>2020-06-01T08:03:35.935Z</updated>
+    <updated>2020-06-01T08:26:24.426Z</updated>
     
     <content type="html"><![CDATA[<h1 id="element-ui记录常见问题"><a href="#element-ui记录常见问题" class="headerlink" title="element-ui记录常见问题"></a>element-ui记录常见问题</h1><ol><li>为了覆盖默认 .el-header的左右内边距20px 使用 less语法深度，谷歌对其不友善<br> 方法一 ：使用 给他的子标签设置 样式 margin：0 -20px<br> 方法二：<br> 在父级标签 加<br> &lt;&lt;&lt;         .el-containe &lt;&lt;&lt; .el-header     sass不解析<br> ::v-deep    .el-containe ::v-deep .el-header<br> /deep/      .el-containe /deep/ .el-header  sass支持，谷歌会警告<br> 其他两者都是 &gt;&gt;&gt; 的别名<br> 方法三 ： 也可使用 less或者sass定义变量的形式处理</li></ol>]]></content>
     

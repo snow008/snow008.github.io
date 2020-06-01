@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>HTML</title>
+    <url>/posts/787223889.html</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>WEB基础</category>
+        <category>HTML</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CSS</title>
     <url>/posts/3999917138.html</url>
     <content><![CDATA[]]></content>
@@ -22,31 +34,6 @@
       </categories>
       <tags>
         <tag>Jquery</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML</title>
-    <url>/posts/787223889.html</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>WEB基础</category>
-        <category>HTML</category>
-      </categories>
-      <tags>
-        <tag>HTML</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>axios</title>
-    <url>/posts/2694088402.html</url>
-    <content><![CDATA[<h1 id="axios代理服务器"><a href="#axios代理服务器" class="headerlink" title="axios代理服务器"></a>axios代理服务器</h1>]]></content>
-      <categories>
-        <category>运维</category>
-        <category>axios</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>axios</tag>
       </tags>
   </entry>
   <entry>
@@ -157,6 +144,19 @@ vim /etc/httpd/conf/httpd.conf  #修改apache配置,其他服务名，端口配�
       </tags>
   </entry>
   <entry>
+    <title>axios</title>
+    <url>/posts/2694088402.html</url>
+    <content><![CDATA[<h1 id="axios代理服务器"><a href="#axios代理服务器" class="headerlink" title="axios代理服务器"></a>axios代理服务器</h1>]]></content>
+      <categories>
+        <category>运维</category>
+        <category>axios</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>axios</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>element ui</title>
     <url>/posts/3631490217.html</url>
     <content><![CDATA[<h1 id="element-ui记录常见问题"><a href="#element-ui记录常见问题" class="headerlink" title="element-ui记录常见问题"></a>element-ui记录常见问题</h1><ol>
@@ -237,6 +237,24 @@ vim /etc/httpd/conf/httpd.conf  #修改apache配置,其他服务名，端口配�
       </tags>
   </entry>
   <entry>
+    <title>hexo插件</title>
+    <url>/posts/1514123638.html</url>
+    <content><![CDATA[<h2 id="Hexo插件篇"><a href="#Hexo插件篇" class="headerlink" title="Hexo插件篇"></a>Hexo插件篇</h2><h2 id="Valine聊天"><a href="#Valine聊天" class="headerlink" title="Valine聊天"></a>Valine聊天</h2><pre><code>1. 参考官网安装即可
+2. $ npm install hexo-related-popular-posts --save</code></pre><p><a href="https://github.com/tea3/hexo-related-popular-posts" target="_blank" rel="noopener">参考地址</a></p>
+<p><a href="https://valine.js.org/quickstart.html" target="_blank" rel="noopener">获取APP ID 和 APP Key</a> &nbsp;<a href="https://valine.js.org" target="_blank" rel="noopener">Valine官方文档</a></p>
+<h2 id="热帖靠前"><a href="#热帖靠前" class="headerlink" title="热帖靠前"></a>热帖靠前</h2><p><a href="https://github.com/tea3/hexo-related-popular-posts" target="_blank" rel="noopener">热帖显示</a></p>
+<h2 id="文章加密"><a href="#文章加密" class="headerlink" title="文章加密"></a>文章加密</h2><pre><code>1. 参考官网安装即可
+2. $ npm install hexo-blog-encrypt --save</code></pre><p><a href="https://github.com/tea3/hexo-related-popular-posts" target="_blank" rel="noopener">参考地址</a></p>
+]]></content>
+      <categories>
+        <category>工具</category>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/posts/1243066710.html</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
@@ -262,24 +280,6 @@ vim /etc/httpd/conf/httpd.conf  #修改apache配置,其他服务名，端口配�
       </tags>
   </entry>
   <entry>
-    <title>hexo插件</title>
-    <url>/posts/1514123638.html</url>
-    <content><![CDATA[<h2 id="Hexo插件篇"><a href="#Hexo插件篇" class="headerlink" title="Hexo插件篇"></a>Hexo插件篇</h2><h2 id="Valine聊天"><a href="#Valine聊天" class="headerlink" title="Valine聊天"></a>Valine聊天</h2><pre><code>1. 参考官网安装即可
-2. $ npm install hexo-related-popular-posts --save</code></pre><p><a href="https://github.com/tea3/hexo-related-popular-posts" target="_blank" rel="noopener">参考地址</a></p>
-<p><a href="https://valine.js.org/quickstart.html" target="_blank" rel="noopener">获取APP ID 和 APP Key</a> &nbsp;<a href="https://valine.js.org" target="_blank" rel="noopener">Valine官方文档</a></p>
-<h2 id="热帖靠前"><a href="#热帖靠前" class="headerlink" title="热帖靠前"></a>热帖靠前</h2><p><a href="https://github.com/tea3/hexo-related-popular-posts" target="_blank" rel="noopener">热帖显示</a></p>
-<h2 id="文章加密"><a href="#文章加密" class="headerlink" title="文章加密"></a>文章加密</h2><pre><code>1. 参考官网安装即可
-2. $ npm install hexo-blog-encrypt --save</code></pre><p><a href="https://github.com/tea3/hexo-related-popular-posts" target="_blank" rel="noopener">参考地址</a></p>
-]]></content>
-      <categories>
-        <category>工具</category>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>js</title>
     <url>/posts/3106780478.html</url>
     <content><![CDATA[]]></content>
@@ -289,25 +289,6 @@ vim /etc/httpd/conf/httpd.conf  #修改apache配置,其他服务名，端口配�
       </categories>
       <tags>
         <tag>js</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>linux findSofe</title>
-    <url>/posts/1207104400.html</url>
-    <content><![CDATA[<h1 id="centOS7查找安装文件后的路径"><a href="#centOS7查找安装文件后的路径" class="headerlink" title="centOS7查找安装文件后的路径"></a>centOS7查找安装文件后的路径</h1><pre><code>问题描述：如何查看yum install xx 安装文件后的路径</code></pre><h2 id="以安装svnserve文件为例"><a href="#以安装svnserve文件为例" class="headerlink" title="以安装svnserve文件为例"></a>以安装svnserve文件为例</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yum install subversion</span><br></pre></td></tr></table></figure>
-<h2 id="rpm和管道查找具体安装文件全称"><a href="#rpm和管道查找具体安装文件全称" class="headerlink" title="rpm和管道查找具体安装文件全称"></a>rpm和管道查找具体安装文件全称</h2><ol>
-<li>列出所有安装的  subversion<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rpm -q  |grep subversion    #软件是否安装</span><br><span class="line">rpm -qa |grep subversion    #查找安装文件全称</span><br><span class="line">rpm -ql |grep subversion    #列出软件包安装的文件</span><br><span class="line">rpm -qal|grep subversion    #查找所有相关存储文件，包括路径</span><br></pre></td></tr></table></figure>
-<img data-src="/img/centOS1.png" alt="查找位置"></li>
-<li>使用命令 rpm -q |grep subversion-1.7.14-14.el7.x86_64 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rpm -q |grep subversion-1.7.14-14.el7.x86_64   #根据具体文件全称显示安装后文件所在路径</span><br><span class="line">rpm -qa |grep subversion-1.7.14-14.el7.x86_64   #根据具体文件全称显示安装后文件所在路径</span><br></pre></td></tr></table></figure>
- -q是 query   -a是 all     -l是 list</li>
-</ol>
-]]></content>
-      <categories>
-        <category>服务端</category>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>linux</tag>
       </tags>
   </entry>
   <entry>
@@ -340,6 +321,25 @@ sudo visudo     #修改sudo配置文件</code></pre><h1 id="ps-ef和ps-aux的区
 ps -ef</code></pre><p><a href="https://www.cnblogs.com/mydriverc/p/8303242.html" target="_blank" rel="noopener">ps -ef和ps aux详解</a></p>
 <h1 id="linux的grep-命令跟-netstat命令"><a href="#linux的grep-命令跟-netstat命令" class="headerlink" title="linux的grep 命令跟 netstat命令"></a>linux的grep 命令跟 netstat命令</h1><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">grep——Global Regular Expression Print——匹配指定内容</span><br><span class="line">ps aux|grep php     #查看php进程信息</span><br><span class="line"></span><br><span class="line">netstat    用于显示各种网络相关信息</span><br><span class="line">参数 </span><br><span class="line">-a  所有选项</span><br><span class="line">-t (tcp)仅显示tcp相关</span><br><span class="line">-u (udp)仅显示udp相关</span><br><span class="line">-n 拒绝显示别名</span><br><span class="line">-l 仅列出有在 Listen (监听) 的服务状态,liru socket</span><br><span class="line">-p 显示建立相关链接的程序名</span><br><span class="line">-r 显示路由信息，路由表 </span><br><span class="line">-e 显示扩展信息，例如uid等 </span><br><span class="line">-s 按各个协议进行统计 </span><br><span class="line">-c 每隔一个固定时间，执行该netstat命令</span><br><span class="line"></span><br><span class="line">netstat -antup              #所有端口</span><br><span class="line">netstat -antup | grep ftp   #显示ftp相关端口</span><br></pre></td></tr></table></figure></code></pre><p><a href="https://www.cnblogs.com/mydriverc/p/8303242.html" target="_blank" rel="noopener">grep匹配</a>     <a href="https://www.cnblogs.com/sparkdev/p/11294517.html" target="_blank" rel="noopener">netstat详解</a></p>
 <h1 id="查找软件安装地址"><a href="#查找软件安装地址" class="headerlink" title="查找软件安装地址"></a>查找软件安装地址</h1><pre><code><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">whereis nginx</span><br><span class="line">find &#x2F; -name mod_dav_svn.so</span><br><span class="line">find &#x2F; -name httpd.pid  #查找模块位置</span><br></pre></td></tr></table></figure></code></pre>]]></content>
+      <categories>
+        <category>服务端</category>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux findSofe</title>
+    <url>/posts/1207104400.html</url>
+    <content><![CDATA[<h1 id="centOS7查找安装文件后的路径"><a href="#centOS7查找安装文件后的路径" class="headerlink" title="centOS7查找安装文件后的路径"></a>centOS7查找安装文件后的路径</h1><pre><code>问题描述：如何查看yum install xx 安装文件后的路径</code></pre><h2 id="以安装svnserve文件为例"><a href="#以安装svnserve文件为例" class="headerlink" title="以安装svnserve文件为例"></a>以安装svnserve文件为例</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">yum install subversion</span><br></pre></td></tr></table></figure>
+<h2 id="rpm和管道查找具体安装文件全称"><a href="#rpm和管道查找具体安装文件全称" class="headerlink" title="rpm和管道查找具体安装文件全称"></a>rpm和管道查找具体安装文件全称</h2><ol>
+<li>列出所有安装的  subversion<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rpm -q  |grep subversion    #软件是否安装</span><br><span class="line">rpm -qa |grep subversion    #查找安装文件全称</span><br><span class="line">rpm -ql |grep subversion    #列出软件包安装的文件</span><br><span class="line">rpm -qal|grep subversion    #查找所有相关存储文件，包括路径</span><br></pre></td></tr></table></figure>
+<img data-src="/img/centOS1.png" alt="查找位置"></li>
+<li>使用命令 rpm -q |grep subversion-1.7.14-14.el7.x86_64 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">rpm -q |grep subversion-1.7.14-14.el7.x86_64   #根据具体文件全称显示安装后文件所在路径</span><br><span class="line">rpm -qa |grep subversion-1.7.14-14.el7.x86_64   #根据具体文件全称显示安装后文件所在路径</span><br></pre></td></tr></table></figure>
+ -q是 query   -a是 all     -l是 list</li>
+</ol>
+]]></content>
       <categories>
         <category>服务端</category>
         <category>linux</category>
@@ -713,6 +713,29 @@ WantedBy=multi-user.target</code></pre>]]></content>
       </tags>
   </entry>
   <entry>
+    <title>node</title>
+    <url>/posts/2239752261.html</url>
+    <content><![CDATA[<h1 id="nvm简单使用"><a href="#nvm简单使用" class="headerlink" title="nvm简单使用"></a>nvm简单使用</h1><blockquote>
+<p>npm 从5.2版开始，增加了 npx 命令,直接使用 npx 命令<br>查看 npx -v ，没有信息就全局安装<br>npm install -g npx # 全局安装<br>npx 作用就是指在项目内调用模块<br>npx 避免全局安装的模块</p>
+</blockquote>
+<p><a href="http://www.ruanyifeng.com/blog/2019/02/npx.html" target="_blank" rel="noopener">更多信息查看</a></p>
+<a id="more"></a>
+
+<h1 id="node安装常见错误"><a href="#node安装常见错误" class="headerlink" title="node安装常见错误"></a>node安装常见错误</h1><ol>
+<li>包安装没权限 （管理员身份运行cmd.exe）</li>
+<li>有时候要注意包的版本问题</li>
+</ol>
+<p><a href="https://blog.csdn.net/qq_39629050/article/details/80863319" target="_blank" rel="noopener">解决方法</a></p>
+]]></content>
+      <categories>
+        <category>前端</category>
+        <category>node</category>
+      </categories>
+      <tags>
+        <tag>node</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>node nvm</title>
     <url>/posts/3071766044.html</url>
     <content><![CDATA[<h1 id="nvm使用以及制定node版本"><a href="#nvm使用以及制定node版本" class="headerlink" title="nvm使用以及制定node版本"></a>nvm使用以及制定node版本</h1><blockquote>
@@ -792,29 +815,6 @@ WantedBy=multi-user.target</code></pre>]]></content>
 <h2 id="安装制定的nodejs"><a href="#安装制定的nodejs" class="headerlink" title="安装制定的nodejs"></a>安装制定的nodejs</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">nvm install 8.0.0 64-bit    #安装node 8.0.0 64-bit的版本</span><br><span class="line">nvm use 8.0.0               #使用node8.0.0的版本</span><br><span class="line">node -v                     # 查看版本切换是否成功</span><br><span class="line">nvm list                    #查看以己经安装的</span><br></pre></td></tr></table></figure>
 
 
-]]></content>
-      <categories>
-        <category>前端</category>
-        <category>node</category>
-      </categories>
-      <tags>
-        <tag>node</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>node</title>
-    <url>/posts/2239752261.html</url>
-    <content><![CDATA[<h1 id="nvm简单使用"><a href="#nvm简单使用" class="headerlink" title="nvm简单使用"></a>nvm简单使用</h1><blockquote>
-<p>npm 从5.2版开始，增加了 npx 命令,直接使用 npx 命令<br>查看 npx -v ，没有信息就全局安装<br>npm install -g npx # 全局安装<br>npx 作用就是指在项目内调用模块<br>npx 避免全局安装的模块</p>
-</blockquote>
-<p><a href="http://www.ruanyifeng.com/blog/2019/02/npx.html" target="_blank" rel="noopener">更多信息查看</a></p>
-<a id="more"></a>
-
-<h1 id="node安装常见错误"><a href="#node安装常见错误" class="headerlink" title="node安装常见错误"></a>node安装常见错误</h1><ol>
-<li>包安装没权限 （管理员身份运行cmd.exe）</li>
-<li>有时候要注意包的版本问题</li>
-</ol>
-<p><a href="https://blog.csdn.net/qq_39629050/article/details/80863319" target="_blank" rel="noopener">解决方法</a></p>
 ]]></content>
       <categories>
         <category>前端</category>
